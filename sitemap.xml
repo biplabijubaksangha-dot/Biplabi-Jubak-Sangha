@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
         <loc>https://biplabijubaksangha-dot.github.io/Biplabi-Jubak-Sangha/</loc>
+    </url>
+
+    <url>
+        <loc>https://biplabijubaksangha-dot.github.io/Biplabi-Jubak-Sangha/about.html</loc>
+    </url>
+
+    <url>
+        <loc>https://biplabijubaksangha-dot.github.io/Biplabi-Jubak-Sangha/gallery.html</loc>
+    </url>
+
+    <url>
+        <loc>https://biplabijubaksangha-dot.github.io/Biplabi-Jubak-Sangha/activities.html</loc>
+    </url>
+
+    <url>
+        <loc>https://biplabijubaksangha-dot.github.io/Biplabi-Jubak-Sangha/contact.html</loc>
     </url>
 
 </urlset>
