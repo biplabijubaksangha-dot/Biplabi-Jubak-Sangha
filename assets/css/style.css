@@ -1,0 +1,1294 @@
+/* =========================================================
+   BIPLABI JUBAK SANGHA
+   MODERN PROFESSIONAL WEBSITE CSS
+   COLOR THEME:
+   NAVY + GOLD + WHITE + LIGHT GREY
+   ========================================================= */
+
+
+/* =========================================================
+   GOOGLE FONT
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   GLOBAL SETTINGS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f6f8;
+    color: #222;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+    padding: 10px 0;
+
+    background: #172554 !important;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.navbar-brand h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
+.navbar-brand small {
+    color: #dbe4f0 !important;
+    font-size: 11px;
+}
+
+.navbar-nav {
+    gap: 5px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 9px 14px !important;
+
+    border-radius: 25px;
+
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #d4af37;
+    color: #172554 !important;
+}
+
+.nav-link.active {
+    background: #d4af37;
+    color: #172554 !important;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+    min-height: 88vh;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(15, 23, 42, 0.94),
+            rgba(30, 41, 59, 0.82)
+        ),
+        url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Decorative gold circle */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(212, 175, 55, 0.12);
+
+    top: -250px;
+    right: -120px;
+}
+
+
+/* Decorative white circle */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    bottom: -200px;
+    left: -120px;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h5 {
+    color: #d4af37 !important;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    color: #ffffff;
+
+    font-size: clamp(42px, 5vw, 68px);
+
+    font-weight: 800 !important;
+
+    line-height: 1.15;
+
+    margin: 15px 0;
+
+    text-shadow:
+        0 5px 25px rgba(0,0,0,0.35);
+}
+
+.hero .lead {
+    color: #ffffff !important;
+
+    font-size: 24px;
+
+    font-weight: 500;
+}
+
+.hero p {
+    color: #e2e8f0;
+
+    max-width: 620px;
+
+    font-size: 16px;
+}
+
+.logo-big {
+    width: 340px;
+
+    filter:
+        drop-shadow(
+            0 20px 30px rgba(0,0,0,0.35)
+        );
+
+    animation:
+        floatingLogo 4s ease-in-out infinite;
+}
+
+
+/* Logo animation */
+
+@keyframes floatingLogo {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 600;
+
+    border-radius: 30px;
+
+    padding: 10px 26px;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Primary button */
+
+.btn-primary {
+    background: #172554 !important;
+
+    border: none !important;
+
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background: #d4af37 !important;
+
+    color: #172554 !important;
+}
+
+
+/* Gold button */
+
+.btn-warning {
+    background: #d4af37 !important;
+
+    border: none !important;
+
+    color: #172554 !important;
+}
+
+.btn-warning:hover {
+    background: #b8941f !important;
+
+    color: #ffffff !important;
+}
+
+
+/* Green */
+
+.btn-success {
+    border-radius: 30px;
+}
+
+
+/* Red */
+
+.btn-danger {
+    border-radius: 30px;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+   ========================================================= */
+
+section {
+    position: relative;
+}
+
+section h2 {
+    font-weight: 800;
+}
+
+
+/* Change Bootstrap blue text to navy */
+
+.text-primary {
+    color: #172554 !important;
+}
+
+
+/* =========================================================
+   HOME ABOUT SECTION
+   ========================================================= */
+
+#about {
+    padding: 90px 0 !important;
+
+    background: #ffffff !important;
+}
+
+#about img {
+    max-width: 300px;
+
+    width: 100%;
+
+    display: block;
+
+    margin: auto;
+
+    padding: 20px;
+
+    background: #f7f7f5;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.10);
+}
+
+#about h5 {
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #d4af37 !important;
+}
+
+#about h2 {
+    color: #172554;
+
+    font-size: 38px;
+
+    font-weight: 800;
+}
+
+#about h3 {
+    color: #172554;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+#about p {
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   HOME EXECUTIVE COMMITTEE
+   ========================================================= */
+
+.home-committee {
+    padding: 90px 0 !important;
+
+    background: #f1f3f5 !important;
+}
+
+.home-committee h5 {
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #d4af37 !important;
+}
+
+.home-committee h2 {
+    color: #172554;
+
+    font-size: 38px;
+}
+
+.committee-card {
+    background: #ffffff;
+
+    border: none !important;
+
+    border-radius: 22px !important;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+    height: 100%;
+}
+
+.committee-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 22px 50px rgba(0,0,0,0.15);
+}
+
+.member-photo {
+    width: 135px;
+
+    height: 135px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 30px auto 20px;
+
+    border: 5px solid #172554;
+
+    padding: 3px;
+
+    background: #ffffff;
+}
+
+.committee-card h5 {
+    color: #222;
+
+    font-weight: 700;
+}
+
+.committee-card p {
+    margin-bottom: 0;
+
+    font-weight: 600;
+
+    color: #172554 !important;
+}
+
+
+/* President */
+
+.president-card {
+    border-top:
+        6px solid #d4af37 !important;
+}
+
+.president-card .member-photo {
+    border-color: #d4af37;
+}
+
+
+/* =========================================================
+   OLD MEMBER ICON
+   ========================================================= */
+
+.member-icon {
+    width: 120px;
+
+    height: 120px;
+
+    background: #172554;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 55px;
+
+    margin: 30px auto 20px;
+}
+
+.president-icon {
+    background: #d4af37;
+
+    color: #172554;
+}
+
+
+/* =========================================================
+   PAGE BANNER
+   ========================================================= */
+
+.page-banner {
+
+    background:
+        linear-gradient(
+            135deg,
+            #172554,
+            #334155
+        );
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 85px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Gold decoration */
+
+.page-banner::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(212,175,55,0.12);
+
+    top: -190px;
+
+    right: 8%;
+}
+
+
+/* White decoration */
+
+.page-banner::after {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.06);
+
+    bottom: -170px;
+
+    left: 8%;
+}
+
+.page-banner .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+.page-banner h1 {
+    font-size: 46px;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    margin-top: 5px;
+
+    color: #e2e8f0;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-section {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 90px 10%;
+
+    background: #ffffff;
+
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+
+    max-width: 450px;
+
+    padding: 25px;
+
+    background: #f7f7f5;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.12);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    color: #172554;
+
+    font-size: 40px;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #555;
+
+    line-height: 1.9;
+
+    font-size: 17px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   MISSION / VISION / VALUES
+   ========================================================= */
+
+.mission {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+    padding: 90px 10%;
+
+    background: #f1f3f5;
+}
+
+.mission .card {
+    background: #ffffff;
+
+    text-align: center;
+
+    padding: 45px 30px;
+
+    border: none;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.08);
+
+    transition:
+        all 0.35s ease;
+}
+
+.mission .card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.14);
+}
+
+.mission .card i {
+    font-size: 52px;
+
+    color: #d4af37;
+
+    margin-bottom: 15px;
+}
+
+.mission .card h3 {
+    color: #172554;
+
+    font-weight: 700;
+}
+
+.mission .card p {
+    color: #666;
+}
+
+
+/* =========================================================
+   HISTORY
+   ========================================================= */
+
+.history {
+    padding: 90px 10%;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+.history h2 {
+    color: #172554;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.history p {
+    max-width: 900px;
+
+    margin: 15px auto;
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   ACTIVITY CARDS
+   ========================================================= */
+
+.py-5 .card {
+    background: #ffffff;
+
+    border: none !important;
+
+    border-radius: 22px !important;
+
+    padding: 35px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+    overflow: hidden;
+}
+
+.py-5 .card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 22px 45px rgba(0,0,0,0.14);
+}
+
+.py-5 .card > i {
+    font-size: 55px !important;
+
+    margin-bottom: 5px;
+}
+
+
+/* Activity title */
+
+.py-5 .card h4 {
+    color: #172554;
+
+    font-weight: 700;
+
+    margin-top: 15px !important;
+}
+
+
+/* Activity text */
+
+.py-5 .card p {
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   ACTIVITY PAGE TOP SECTION
+   ========================================================= */
+
+.py-5 > .container > .text-center h5 {
+    color: #d4af37 !important;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.py-5 > .container > .text-center h2 {
+    color: #172554;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MODAL DESIGN
+   ========================================================= */
+
+.modal-content {
+    border: none;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.25);
+}
+
+.modal-header {
+    padding: 20px 25px;
+
+    background: #172554 !important;
+}
+
+.modal-title {
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-body h4 {
+    font-weight: 700;
+
+    color: #172554 !important;
+}
+
+.modal-body p {
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+
+    margin-bottom: 18px;
+}
+
+.modal-footer {
+    padding: 15px 25px;
+
+    background: #f8f9fa;
+}
+
+
+/* =========================================================
+   COMMITTEE PAGE
+   ========================================================= */
+
+.committee-page {
+    width: 95%;
+
+    max-width: 1400px;
+
+    margin: 70px auto;
+}
+
+#committee-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(270px, 1fr));
+
+    gap: 30px;
+}
+
+.member-card {
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.10);
+
+    transition:
+        all 0.4s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 22px 50px rgba(0,0,0,0.16);
+}
+
+.member-card img {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+}
+
+.member-card h3 {
+    margin: 20px 15px 10px;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    color: #222;
+}
+
+.member-card span {
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    padding: 8px 22px;
+
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   COMMITTEE DESIGNATIONS
+   ========================================================= */
+
+.president {
+    background: #d4af37;
+    color: #172554 !important;
+}
+
+.vice {
+    background: #64748b;
+}
+
+.secretary {
+    background: #172554;
+}
+
+.treasurer {
+    background: #198754;
+}
+
+.board {
+    background: #b45309;
+}
+
+
+/* =========================================================
+   DESIGNATION
+   ========================================================= */
+
+.designation {
+    display: inline-block;
+
+    margin: 0 0 22px;
+
+    padding: 8px 20px;
+
+    background: #172554;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   OLD LOGO STYLE
+   ========================================================= */
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 10px 30px;
+}
+
+.logo img {
+    width: 70px;
+
+    height: 70px;
+
+    object-fit: contain;
+}
+
+.logo h2 {
+    margin: 0;
+
+    font-size: 24px;
+
+    color: #172554;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background:
+        linear-gradient(
+            135deg,
+            #172554,
+            #0f172a
+        ) !important;
+
+    color: #ffffff;
+
+    padding: 55px 0 !important;
+
+    margin-top: 0;
+}
+
+footer h4 {
+    color: #ffffff;
+
+    font-weight: 700;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #cbd5e1;
+
+    margin: 6px 0;
+}
+
+footer p:last-child {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.12);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+
+        gap: 2px;
+    }
+
+    .nav-link {
+        border-radius: 8px;
+    }
+
+    .hero {
+        min-height: auto;
+
+        padding: 100px 0;
+
+        text-align: center;
+
+        background-attachment: scroll;
+    }
+
+    .hero p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .logo-big {
+        width: 260px;
+
+        margin-top: 45px;
+    }
+
+    .about-section {
+        padding: 70px 7%;
+
+        gap: 45px;
+    }
+
+    .mission {
+        grid-template-columns: 1fr;
+
+        padding: 70px 7%;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .navbar-brand h5 {
+        font-size: 15px;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+
+        height: 50px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero .lead {
+        font-size: 19px;
+    }
+
+    .logo-big {
+        width: 220px;
+    }
+
+    .page-banner {
+        padding: 65px 20px;
+    }
+
+    .page-banner h1 {
+        font-size: 35px;
+    }
+
+    .page-banner p {
+        font-size: 15px;
+    }
+
+    .about-section {
+        flex-direction: column;
+
+        padding: 60px 7%;
+
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .history {
+        padding: 60px 7%;
+    }
+
+    .history h2 {
+        font-size: 32px;
+    }
+
+    #committee-container {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card img {
+        height: 350px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero h5 {
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+    .hero .btn {
+        display: block;
+
+        width: 100%;
+
+        margin: 10px 0 !important;
+    }
+
+    .page-banner h1 {
+        font-size: 30px;
+    }
+
+    .py-5 .card {
+        padding: 28px !important;
+    }
+
+    .modal-body {
+        padding: 22px;
+    }
+
+}
