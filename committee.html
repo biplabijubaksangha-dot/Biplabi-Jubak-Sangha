@@ -7,99 +7,134 @@
 
     <title>Committee | Biplabi Jubak Sangha</title>
 
-    <!-- Your existing stylesheet -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Committee CSS -->
+    <link rel="stylesheet" href="assets/css/committee.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- ================= HEADER ================= -->
 
-    <header class="navbar">
+    <header class="site-header">
 
-        <div class="logo">
+        <div class="header-container">
 
-            <img src="assets/images/logo.png" alt="Club Logo">
+            <a href="index.html" class="club-brand">
 
-            <h2>Biplabi Jubak Sangha</h2>
+                <img src="assets/images/logo.png"
+                     alt="Biplabi Jubak Sangha Logo">
+
+                <div class="brand-text">
+                    <h2>Biplabi Jubak Sangha</h2>
+                    <span>Salijanga</span>
+                </div>
+
+            </a>
+
+
+            <nav class="main-nav">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="committee.html" class="active">
+                            Committee
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="activities.html">
+                            Activities
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
 
         </div>
-
-        <nav>
-
-            <ul>
-
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-
-                <li>
-                    <a href="committee.html" class="active">
-                        Committee
-                    </a>
-                </li>
-
-                <li>
-                    <a href="activities.html">
-                        Activities
-                    </a>
-                </li>
-
-                <li>
-                    <a href="gallery.html">
-                        Gallery
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
 
     </header>
 
 
     <!-- ================= PAGE BANNER ================= -->
 
-    <section class="page-banner">
+    <section class="committee-banner">
 
-        <h1>Executive Committee</h1>
+        <div class="banner-content">
 
-        <p>
-            Meet the dedicated members of our club
-        </p>
+            <span class="banner-small">BIPLABI JUBAK SANGHA</span>
 
-    </section>
+            <h1>Executive Committee</h1>
 
+            <p>
+                Meet the dedicated members who guide,
+                organize and support our club activities.
+            </p>
 
-    <!-- ================= COMMITTEE ================= -->
-
-    <section class="committee">
-
-        <div id="committee-container"></div>
+        </div>
 
     </section>
+
+
+    <!-- ================= COMMITTEE SECTION ================= -->
+
+    <main class="committee-section">
+
+        <div class="section-heading">
+
+            <span>OUR TEAM</span>
+
+            <h2>Executive Committee Members</h2>
+
+            <p>
+                Our committee members work together for the
+                development of the club and the welfare of our community.
+            </p>
+
+        </div>
+
+
+        <!-- Members will appear here -->
+        <div id="committee-container" class="committee-grid"></div>
+
+    </main>
 
 
     <!-- ================= FOOTER ================= -->
 
-    <footer>
+    <footer class="site-footer">
 
         <p>
-            © 2026 Biplabi Jubak Sangha
+            © 2026 Biplabi Jubak Sangha. All Rights Reserved.
         </p>
 
     </footer>

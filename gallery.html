@@ -1,100 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Gallery | Biplabi Jubak Sangha</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-    <div class="container">
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="club-brand">
 
             <img src="assets/images/logo.png"
-                 alt="Biplabi Jubak Sangha Logo"
-                 class="gallery-logo">
+                 alt="Biplabi Jubak Sangha Logo">
 
-            <span class="fw-bold">
-                Biplabi Jubak Sangha
-            </span>
+            <div class="brand-text">
+
+                <h2>Biplabi Jubak Sangha</h2>
+
+                <span>Salijanga</span>
+
+            </div>
 
         </a>
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
 
-            <span class="navbar-toggler-icon"></span>
+        <nav class="main-nav">
 
-        </button>
+            <ul>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="activities.html">Activities</a>
+                <li>
+                    <a href="committee.html">
+                        Committee
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="committee.html">Committee</a>
+                <li>
+                    <a href="activities.html">
+                        Activities
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="gallery.html">Gallery</a>
+                <li>
+                    <a href="gallery.html" class="active">
+                        Gallery
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
                 </li>
 
             </ul>
 
-        </div>
+        </nav>
 
     </div>
 
-</nav>
+</header>
 
 
-<!-- ================= GALLERY BANNER ================= -->
+
+<!-- =====================================================
+     GALLERY HERO
+===================================================== -->
+
 <section class="gallery-banner">
 
     <div class="gallery-banner-content">
 
-        <span>
+        <span class="gallery-banner-label">
+
             <i class="bi bi-images"></i>
+
             OUR MEMORIES
+
         </span>
 
-        <h1>Photo Gallery</h1>
+
+        <h1>
+            Photo Gallery
+        </h1>
+
 
         <p>
             A collection of memorable moments, community activities
@@ -106,20 +135,29 @@
 </section>
 
 
-<!-- ================= GALLERY SECTION ================= -->
+
+<!-- =====================================================
+     GALLERY SECTION
+===================================================== -->
+
 <section class="gallery-section">
 
     <div class="container">
 
-        <div class="gallery-heading text-center">
+
+        <!-- SECTION HEADING -->
+
+        <div class="gallery-heading">
 
             <span class="gallery-label">
                 MOMENTS TO REMEMBER
             </span>
 
+
             <h2>
                 Our Community Memories
             </h2>
+
 
             <p>
                 Explore some memorable moments from our social,
@@ -129,260 +167,285 @@
         </div>
 
 
-        <!-- ================= GALLERY GRID ================= -->
-        <div class="row g-4 justify-content-center">
+
+        <!-- =================================================
+             GALLERY GRID
+        ================================================== -->
+
+        <div class="gallery-grid">
 
 
             <!-- PHOTO 1 -->
-            <div class="col-lg-4 col-md-6 col-sm-6">
 
-                <div class="gallery-item"
-                     onclick="openGallery('assets/images/hero.jpg')">
+            <div class="gallery-item"
+                 onclick="openGallery('assets/images/hero.jpg')">
 
-                    <div class="gallery-image">
+                <div class="gallery-image">
 
-                        <img src="assets/images/hero.jpg"
-                             alt="Our Community">
+                    <img src="assets/images/hero.jpg"
+                         alt="Our Community">
 
-                        <div class="gallery-overlay">
+                    <div class="gallery-overlay">
 
-                            <div class="gallery-view">
-                                <i class="bi bi-zoom-in"></i>
-                            </div>
+                        <span class="gallery-view">
 
-                        </div>
+                            <i class="bi bi-zoom-in"></i>
 
-                    </div>
-
-                    <div class="gallery-caption">
-
-                        <h5>Our Community</h5>
-
-                        <span>
-                            Biplabi Jubak Sangha
                         </span>
 
                     </div>
 
                 </div>
 
+
+                <div class="gallery-caption">
+
+                    <h3>
+                        Our Community
+                    </h3>
+
+                    <p>
+                        Biplabi Jubak Sangha
+                    </p>
+
+                </div>
+
             </div>
+
 
 
             <!-- PHOTO 2 -->
-            <div class="col-lg-4 col-md-6 col-sm-6">
 
-                <div class="gallery-item"
-                     onclick="openGallery('assets/images/about.jpg')">
+            <div class="gallery-item"
+                 onclick="openGallery('assets/images/about.jpg')">
 
-                    <div class="gallery-image">
+                <div class="gallery-image">
 
-                        <img src="assets/images/about.jpg"
-                             alt="Community Activities">
+                    <img src="assets/images/about.jpg"
+                         alt="Community Activities">
 
-                        <div class="gallery-overlay">
+                    <div class="gallery-overlay">
 
-                            <div class="gallery-view">
-                                <i class="bi bi-zoom-in"></i>
-                            </div>
+                        <span class="gallery-view">
 
-                        </div>
+                            <i class="bi bi-zoom-in"></i>
 
-                    </div>
-
-                    <div class="gallery-caption">
-
-                        <h5>Community Activities</h5>
-
-                        <span>
-                            Together for our village
                         </span>
 
                     </div>
 
                 </div>
 
+
+                <div class="gallery-caption">
+
+                    <h3>
+                        Community Activities
+                    </h3>
+
+                    <p>
+                        Together for our village
+                    </p>
+
+                </div>
+
             </div>
 
 
-            <!-- PHOTO 3 -->
-            <div class="col-lg-4 col-md-6 col-sm-6">
 
-                <div class="gallery-item"
-                     onclick="openGallery('assets/images/logo.png')">
+            <!-- PHOTO 3 - LOGO -->
 
-                    <div class="gallery-image">
+            <div class="gallery-item logo-gallery-item"
+                 onclick="openGallery('assets/images/logo.png')">
 
-                        <img src="assets/images/logo.png"
-                             alt="Biplabi Jubak Sangha Logo">
+                <div class="gallery-image logo-gallery-image">
 
-                        <div class="gallery-overlay">
+                    <img src="assets/images/logo.png"
+                         alt="Biplabi Jubak Sangha Logo">
 
-                            <div class="gallery-view">
-                                <i class="bi bi-zoom-in"></i>
-                            </div>
+                    <div class="gallery-overlay">
 
-                        </div>
+                        <span class="gallery-view">
 
-                    </div>
+                            <i class="bi bi-zoom-in"></i>
 
-                    <div class="gallery-caption">
-
-                        <h5>Our Identity</h5>
-
-                        <span>
-                            Biplabi Jubak Sangha
                         </span>
 
                     </div>
 
                 </div>
 
+
+                <div class="gallery-caption">
+
+                    <h3>
+                        Our Identity
+                    </h3>
+
+                    <p>
+                        Biplabi Jubak Sangha
+                    </p>
+
+                </div>
+
             </div>
+
 
 
             <!-- PRESIDENT -->
-            <div class="col-lg-4 col-md-6 col-sm-6">
 
-                <div class="gallery-item"
-                     onclick="openGallery('assets/images/members/president.jpg')">
+            <div class="gallery-item"
+                 onclick="openGallery('assets/images/members/president.jpg')">
 
-                    <div class="gallery-image">
+                <div class="gallery-image">
 
-                        <img src="assets/images/members/president.jpg"
-                             alt="President">
+                    <img src="assets/images/members/president.jpg"
+                         alt="President">
 
-                        <div class="gallery-overlay">
+                    <div class="gallery-overlay">
 
-                            <div class="gallery-view">
-                                <i class="bi bi-zoom-in"></i>
-                            </div>
+                        <span class="gallery-view">
 
-                        </div>
+                            <i class="bi bi-zoom-in"></i>
 
-                    </div>
-
-                    <div class="gallery-caption">
-
-                        <h5>President</h5>
-
-                        <span>
-                            Executive Committee
                         </span>
 
                     </div>
 
                 </div>
 
+
+                <div class="gallery-caption">
+
+                    <h3>
+                        President
+                    </h3>
+
+                    <p>
+                        Executive Committee
+                    </p>
+
+                </div>
+
             </div>
+
 
 
             <!-- VICE PRESIDENT -->
-            <div class="col-lg-4 col-md-6 col-sm-6">
 
-                <div class="gallery-item"
-                     onclick="openGallery('assets/images/members/vice-president.jpg')">
+            <div class="gallery-item"
+                 onclick="openGallery('assets/images/members/vice-president.jpg')">
 
-                    <div class="gallery-image">
+                <div class="gallery-image">
 
-                        <img src="assets/images/members/vice-president.jpg"
-                             alt="Vice President">
+                    <img src="assets/images/members/vice-president.jpg"
+                         alt="Vice President">
 
-                        <div class="gallery-overlay">
+                    <div class="gallery-overlay">
 
-                            <div class="gallery-view">
-                                <i class="bi bi-zoom-in"></i>
-                            </div>
+                        <span class="gallery-view">
 
-                        </div>
+                            <i class="bi bi-zoom-in"></i>
 
-                    </div>
-
-                    <div class="gallery-caption">
-
-                        <h5>Vice President</h5>
-
-                        <span>
-                            Executive Committee
                         </span>
 
                     </div>
 
                 </div>
 
+
+                <div class="gallery-caption">
+
+                    <h3>
+                        Vice President
+                    </h3>
+
+                    <p>
+                        Executive Committee
+                    </p>
+
+                </div>
+
             </div>
+
 
 
             <!-- SECRETARY -->
-            <div class="col-lg-4 col-md-6 col-sm-6">
 
-                <div class="gallery-item"
-                     onclick="openGallery('assets/images/members/secretary.jpg')">
+            <div class="gallery-item"
+                 onclick="openGallery('assets/images/members/secretary.jpg')">
 
-                    <div class="gallery-image">
+                <div class="gallery-image">
 
-                        <img src="assets/images/members/secretary.jpg"
-                             alt="Secretary">
+                    <img src="assets/images/members/secretary.jpg"
+                         alt="Secretary">
 
-                        <div class="gallery-overlay">
+                    <div class="gallery-overlay">
 
-                            <div class="gallery-view">
-                                <i class="bi bi-zoom-in"></i>
-                            </div>
+                        <span class="gallery-view">
 
-                        </div>
+                            <i class="bi bi-zoom-in"></i>
 
-                    </div>
-
-                    <div class="gallery-caption">
-
-                        <h5>Secretary</h5>
-
-                        <span>
-                            Executive Committee
                         </span>
 
                     </div>
 
                 </div>
 
+
+                <div class="gallery-caption">
+
+                    <h3>
+                        Secretary
+                    </h3>
+
+                    <p>
+                        Executive Committee
+                    </p>
+
+                </div>
+
             </div>
+
 
 
             <!-- TREASURER -->
-            <div class="col-lg-4 col-md-6 col-sm-6">
 
-                <div class="gallery-item"
-                     onclick="openGallery('assets/images/members/treasurer.jpg')">
+            <div class="gallery-item"
+                 onclick="openGallery('assets/images/members/treasurer.jpg')">
 
-                    <div class="gallery-image">
+                <div class="gallery-image">
 
-                        <img src="assets/images/members/treasurer.jpg"
-                             alt="Treasurer">
+                    <img src="assets/images/members/treasurer.jpg"
+                         alt="Treasurer">
 
-                        <div class="gallery-overlay">
+                    <div class="gallery-overlay">
 
-                            <div class="gallery-view">
-                                <i class="bi bi-zoom-in"></i>
-                            </div>
+                        <span class="gallery-view">
 
-                        </div>
+                            <i class="bi bi-zoom-in"></i>
 
-                    </div>
-
-                    <div class="gallery-caption">
-
-                        <h5>Treasurer</h5>
-
-                        <span>
-                            Executive Committee
                         </span>
 
                     </div>
 
                 </div>
 
+
+                <div class="gallery-caption">
+
+                    <h3>
+                        Treasurer
+                    </h3>
+
+                    <p>
+                        Executive Committee
+                    </p>
+
+                </div>
+
             </div>
+
 
         </div>
 
@@ -391,23 +454,29 @@
 </section>
 
 
-<!-- ================= IMAGE MODAL ================= -->
+
+<!-- =====================================================
+     IMAGE MODAL
+===================================================== -->
+
 <div class="modal fade"
      id="galleryModal"
      tabindex="-1"
      aria-hidden="true">
 
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
 
         <div class="modal-content gallery-modal">
 
             <button type="button"
                     class="gallery-close"
-                    data-bs-dismiss="modal">
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
 
                 <i class="bi bi-x-lg"></i>
 
             </button>
+
 
             <div class="modal-body">
 
@@ -424,76 +493,33 @@
 </div>
 
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
 
-    <div class="container">
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-        <div class="row">
+<footer class="site-footer">
 
-            <div class="col-md-6 mb-4">
-
-                <h4>
-                    Biplabi Jubak Sangha
-                </h4>
-
-                <p>
-                    Working together for the development,
-                    welfare and progress of our community.
-                </p>
-
-            </div>
-
-
-            <div class="col-md-6 mb-4">
-
-                <h5>
-                    Contact Information
-                </h5>
-
-                <p>
-                    <i class="bi bi-geo-alt"></i>
-                    Salijanga, Bodal, Naugaon, Jagatsinghpur
-                </p>
-
-                <p>
-                    <i class="bi bi-telephone"></i>
-                    +91 9658431096
-                </p>
-
-                <p>
-                    <i class="bi bi-envelope"></i>
-                    biplabijubaksangha@gmail.com
-                </p>
-
-                <p>
-                    Registration No. 16508/1343
-                </p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="text-center">
-
-            <p class="mb-0">
-                © 2026 Biplabi Jubak Sangha. All Rights Reserved.
-            </p>
-
-        </div>
-
-    </div>
+    <p>
+        © 2026 Biplabi Jubak Sangha. All Rights Reserved.
+    </p>
 
 </footer>
 
 
-<!-- ================= BOOTSTRAP JS ================= -->
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<!-- ================= GALLERY JAVASCRIPT ================= -->
+
+<!-- =====================================================
+     GALLERY JAVASCRIPT
+===================================================== -->
+
 <script>
 
 function openGallery(imagePath) {
@@ -514,7 +540,9 @@ function openGallery(imagePath) {
 
 
 <!-- Main JavaScript -->
+
 <script src="assets/js/script.js"></script>
+
 
 </body>
 </html>
