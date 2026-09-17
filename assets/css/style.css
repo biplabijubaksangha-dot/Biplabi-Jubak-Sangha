@@ -2004,3 +2004,55 @@ body {
     color: #172554;
     background: #ffffff;
 }
+/* Center footer content */
+.site-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.site-footer .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* ================= FOOTER CENTERING ================= */
+
+.site-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.site-footer .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-footer h4,
+.site-footer p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ================= FOOTER CENTERING ================= */
+
+.site-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.site-footer .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-footer h4,
+.site-footer p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
