@@ -339,105 +339,112 @@
                     </p>
 
 
-                    <form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Web3Forms Access Key -->
+    <input type="hidden"
+           name="access_key"
+           value="cc001a6e-2f86-46ef-a222-11a3c6577ff2">
+
+    <!-- Email Subject -->
+    <input type="hidden"
+           name="subject"
+           value="New Join Us / Contact Form Submission - Biplabi Jubak Sangha">
+
+    <!-- Name -->
+    <div class="mb-3">
+
+        <label for="name" class="form-label">
+            Your Name
+        </label>
+
+        <input type="text"
+               class="form-control"
+               id="name"
+               name="name"
+               placeholder="Enter your name"
+               required>
+
+    </div>
 
 
-                        <!-- Name -->
+    <!-- Email -->
+    <div class="mb-3">
 
-                        <div class="mb-3">
+        <label for="email" class="form-label">
+            Email Address
+        </label>
 
-                            <label for="name" class="form-label">
-                                Your Name
-                            </label>
+        <input type="email"
+               class="form-control"
+               id="email"
+               name="email"
+               placeholder="Enter your email"
+               required>
 
-                            <input type="text"
-                                   class="form-control"
-                                   id="name"
-                                   placeholder="Enter your name"
-                                   required>
-
-                        </div>
-
-
-                        <!-- Email -->
-
-                        <div class="mb-3">
-
-                            <label for="email" class="form-label">
-                                Email Address
-                            </label>
-
-                            <input type="email"
-                                   class="form-control"
-                                   id="email"
-                                   placeholder="Enter your email"
-                                   required>
-
-                        </div>
+    </div>
 
 
-                        <!-- Phone -->
+    <!-- Phone -->
+    <div class="mb-3">
 
-                        <div class="mb-3">
+        <label for="phone" class="form-label">
+            Phone Number
+        </label>
 
-                            <label for="phone" class="form-label">
-                                Phone Number
-                            </label>
+        <input type="tel"
+               class="form-control"
+               id="phone"
+               name="phone"
+               placeholder="Enter your phone number">
 
-                            <input type="tel"
-                                   class="form-control"
-                                   id="phone"
-                                   placeholder="Enter your phone number">
-
-                        </div>
-
-
-                        <!-- Subject -->
-
-                        <div class="mb-3">
-
-                            <label for="subject" class="form-label">
-                                Subject
-                            </label>
-
-                            <input type="text"
-                                   class="form-control"
-                                   id="subject"
-                                   placeholder="Enter subject">
-
-                        </div>
+    </div>
 
 
-                        <!-- Message -->
+    <!-- Subject -->
+    <div class="mb-3">
 
-                        <div class="mb-4">
+        <label for="message_subject" class="form-label">
+            Subject
+        </label>
 
-                            <label for="message" class="form-label">
-                                Message
-                            </label>
+        <input type="text"
+               class="form-control"
+               id="message_subject"
+               name="message_subject"
+               placeholder="Enter subject">
 
-                            <textarea class="form-control"
-                                      id="message"
-                                      rows="5"
-                                      placeholder="Write your message here..."
-                                      required></textarea>
-
-                        </div>
-
-
-                        <!-- Submit -->
-
-                        <button type="submit"
-                                class="btn btn-primary">
-
-                            <i class="bi bi-send-fill me-2"></i>
-
-                            Send Message
-
-                        </button>
+    </div>
 
 
-                    </form>
+    <!-- Message -->
+    <div class="mb-4">
+
+        <label for="message" class="form-label">
+            Message
+        </label>
+
+        <textarea class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required></textarea>
+
+    </div>
+
+
+    <!-- Submit -->
+    <button type="submit"
+            class="btn btn-primary">
+
+        <i class="bi bi-send-fill me-2"></i>
+
+        Send Message
+
+    </button>
+
+</form>
 
                 </div>
 
