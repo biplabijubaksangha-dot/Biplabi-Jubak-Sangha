@@ -1302,18 +1302,20 @@ footer p:last-child {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 1000;
+    margin: 0;
+    padding: 0;
 }
 
 .header-container {
     width: 92%;
     max-width: 1400px;
     min-height: 82px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 30px;
 }
 
