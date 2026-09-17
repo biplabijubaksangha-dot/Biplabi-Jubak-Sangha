@@ -1921,3 +1921,12 @@ footer p:last-child {
     }
 
 }
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    margin-top: 0;
+}
