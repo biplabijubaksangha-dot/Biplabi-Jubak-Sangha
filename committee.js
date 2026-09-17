@@ -45,10 +45,20 @@ const members = [
         photo: "assets/images/members/member5.jpg"
     },
     {
-        name: "Subash Mohapatra",
-        designation: "Board Member",
-        photo: "assets/images/members/member6.jpg"
-    }
+name: "Subash Mohapatra",
+designation: "Board Member",
+photo: "assets/images/members/member6.jpg"
+},
+{
+name: "Santosh Kumar Swain",
+designation: "Board Member",
+photo: "assets/images/members/member7.jpg"
+},
+{
+name: "Indrajit Mohapatra",
+designation: "Board Member",
+photo: "assets/images/members/member8.jpg"
+}
 ];
 
 const container = document.getElementById("committee-container");
