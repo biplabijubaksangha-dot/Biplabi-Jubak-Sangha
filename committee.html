@@ -7,16 +7,11 @@
 
     <title>Committee | Biplabi Jubak Sangha</title>
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Committee CSS -->
     <link rel="stylesheet" href="assets/css/committee.css">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -30,15 +25,19 @@
             <a href="index.html" class="club-brand">
 
                 <img src="assets/images/logo.png"
-                     alt="Biplabi Jubak Sangha Logo">
+                    alt="Biplabi Jubak Sangha Logo">
 
                 <div class="brand-text">
+
                     <h2>Biplabi Jubak Sangha</h2>
-                    <span>Salijanga • Bodal • Naugaon • Jagatsinghpur • Odisha</span>
+
+                    <span>
+                        Salijanga • Bodal • Naugaon • Jagatsinghpur • Odisha
+                    </span>
+
                 </div>
 
             </a>
-
 
             <nav class="main-nav">
 
@@ -87,83 +86,191 @@
 
     <!-- ================= PAGE BANNER ================= -->
 
-<section class="page-banner">
+    <section class="committee-banner">
 
-    <div class="container">
+        <div class="banner-content">
 
-        <h1>Executive Committee</h1>
+            <span class="banner-small">
+                BIPLABI JUBAK SANGHA
+            </span>
 
-        <p>
-            Meet the dedicated members who guide,
-            organize and support our club activities.
-        </p>
+            <h1>
+                Our Committee
+            </h1>
 
-    </div>
+            <p>
+                Meet the dedicated members who guide, organize
+                and support our club activities and community service.
+            </p>
 
-</section>
+        </div>
+
+    </section>
 
 
     <!-- ================= COMMITTEE SECTION ================= -->
 
     <main class="committee-section">
 
-        <div class="section-heading">
+        <!-- ================= COMMITTEE HOME ================= -->
 
-            <span>OUR TEAM</span>
+        <div id="committee-home" class="committee-home">
 
-            <h2>Executive Committee Members</h2>
+            <div class="section-heading">
 
-            <p>
-                Our committee members work together for the
-                development of the club and the welfare of our community.
-            </p>
+                <span>OUR TEAM</span>
+
+                <h2>
+                    Committee Members
+                </h2>
+
+                <p>
+                    Select a committee section below to view
+                    the members and their details.
+                </p>
+
+            </div>
+
+
+            <!-- TWO CLICKABLE SECTIONS -->
+
+            <div class="committee-choice-grid">
+
+
+                <!-- EXECUTIVE COMMITTEE -->
+
+                <button
+                    type="button"
+                    class="committee-choice executive-choice"
+                    data-section="executive">
+
+                    <div class="choice-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <div class="choice-content">
+
+                        <span class="choice-label">
+                            SECTION 01
+                        </span>
+
+                        <h3>
+                            Executive Committee
+                        </h3>
+
+                        <p>
+                            View the 13 Executive Committee Members.
+                        </p>
+
+                    </div>
+
+                    <span class="choice-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </button>
+
+
+                <!-- COMMITTEE MEMBERS -->
+
+                <button
+                    type="button"
+                    class="committee-choice members-choice"
+                    data-section="members">
+
+                    <div class="choice-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="choice-content">
+
+                        <span class="choice-label">
+                            SECTION 02
+                        </span>
+
+                        <h3>
+                            Committee Members
+                        </h3>
+
+                        <p>
+                            View the 22 Committee Members.
+                        </p>
+
+                    </div>
+
+                    <span class="choice-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </button>
+
+            </div>
 
         </div>
 
 
-        <!-- Members will appear here -->
-        <div id="committee-container" class="committee-grid"></div>
+        <!-- ================= MEMBER LIST VIEW ================= -->
+
+        <div id="committee-view" class="committee-view" hidden>
+
+            <button
+                type="button"
+                id="committee-back"
+                class="committee-back">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Committee
+
+            </button>
+
+
+            <!-- JavaScript puts members here -->
+
+            <div id="committee-container"></div>
+
+        </div>
 
     </main>
 
 
     <!-- ================= FOOTER ================= -->
 
-<footer class="site-footer bg-dark text-white py-4">
+    <footer class="site-footer bg-dark text-white py-4">
 
- <div class="container text-center">
+        <div class="container text-center">
 
-        <h4>
-            Biplabi Jubak Sangha
-        </h4>
+            <h4>
+                Biplabi Jubak Sangha
+            </h4>
 
-        <p>
-            Registration No. 16508/1343
-        </p>
+            <p>
+                Registration No. 16508/1343
+            </p>
 
-        <p>
-            Salijanga | Bodal | Naugaon | Jagatsinghpur
-        </p>
+            <p>
+                Salijanga | Bodal | Naugaon | Jagatsinghpur
+            </p>
 
-        <p>
-            📞 +91 9658431096
-        </p>
+            <p>
+                📞 +91 9658431096
+            </p>
 
-        <p>
-            ✉️ biplabijubaksangha@gmail.com
-        </p>
+            <p>
+                ✉️ biplabijubaksangha@gmail.com
+            </p>
 
-        <p>
-            NGO Darpan Unique ID: OR/2025/0907373
-        </p>
+            <p>
+                NGO Darpan Unique ID: OR/2025/0907373
+            </p>
 
-        <p>
-            © 2026 Biplabi Jubak Sangha
-        </p>
+            <p>
+                © 2026 Biplabi Jubak Sangha
+            </p>
 
-    </div>
+        </div>
 
-</footer>
+    </footer>
 
 
     <!-- ================= JAVASCRIPT ================= -->
