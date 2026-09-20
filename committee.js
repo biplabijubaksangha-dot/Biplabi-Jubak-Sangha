@@ -3,15 +3,14 @@
 // COMMITTEE MEMBERS
 // ============================================================
 
-
 const executiveMembers = [
 
     {
         name: "Rakesh Kumar Mohapatra",
         designation: "President",
         photo: "assets/images/members/president.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-021",
+        bloodGroup: "O+",
         responsibilities:
             "Provides overall leadership, guidance and coordination for the organisation and its activities."
     },
@@ -20,8 +19,8 @@ const executiveMembers = [
         name: "Bidur Prava Mohapatra",
         designation: "Vice President",
         photo: "assets/images/members/vice-president.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-004",
+        bloodGroup: "O+",
         responsibilities:
             "Supports the President and assists in coordinating organisational activities and programmes."
     },
@@ -30,8 +29,8 @@ const executiveMembers = [
         name: "Mrutyunjaya Muduli",
         designation: "Secretary",
         photo: "assets/images/members/secretary.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-019",
+        bloodGroup: "B+",
         responsibilities:
             "Maintains organisational records, notices, correspondence, meetings and official documentation."
     },
@@ -40,8 +39,8 @@ const executiveMembers = [
         name: "Rakesh Kumar Swain",
         designation: "Treasurer",
         photo: "assets/images/members/treasurer.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-022",
+        bloodGroup: "O+",
         responsibilities:
             "Maintains financial records and assists with the management of income, expenses and financial documentation."
     },
@@ -50,7 +49,7 @@ const executiveMembers = [
         name: "Soumya Ranjan Das",
         designation: "Board Member",
         photo: "assets/images/members/member5.jpg",
-        registrationNo: "",
+        registrationNo: "BJS-16508-028",
         bloodGroup: "",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
@@ -60,7 +59,7 @@ const executiveMembers = [
         name: "Indrajeet Mohapatra",
         designation: "Board Member",
         photo: "assets/images/members/member8.jpg",
-        registrationNo: "",
+        registrationNo: "BJS-16508-016",
         bloodGroup: "",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
@@ -70,8 +69,8 @@ const executiveMembers = [
         name: "Rahul Nayak",
         designation: "Board Member",
         photo: "assets/images/members/member2.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-020",
+        bloodGroup: "A+",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -80,7 +79,7 @@ const executiveMembers = [
         name: "Sourabha Muduli",
         designation: "Board Member",
         photo: "assets/images/members/member4.jpg",
-        registrationNo: "",
+        registrationNo: "BJS-16508-029",
         bloodGroup: "",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
@@ -90,8 +89,8 @@ const executiveMembers = [
         name: "Gyan Ranjan Biswal",
         designation: "Board Member",
         photo: "assets/images/members/member3.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-013",
+        bloodGroup: "O+",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -100,8 +99,8 @@ const executiveMembers = [
         name: "Biren Kumar Mohapatra",
         designation: "Board Member",
         photo: "assets/images/members/member1.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-005",
+        bloodGroup: "O+",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -110,8 +109,8 @@ const executiveMembers = [
         name: "Subash Kumar Mohapatra",
         designation: "Board Member",
         photo: "assets/images/members/member6.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-030",
+        bloodGroup: "A-",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -120,8 +119,8 @@ const executiveMembers = [
         name: "Santosh Kumar Swain",
         designation: "Board Member",
         photo: "assets/images/members/member7.jpg",
-        registrationNo: "",
-        bloodGroup: "",
+        registrationNo: "BJS-16508-027",
+        bloodGroup: "O+",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -130,7 +129,7 @@ const executiveMembers = [
         name: "Manoranjan Nayak",
         designation: "Board Member",
         photo: "assets/images/members/member9.jpg",
-        registrationNo: "",
+        registrationNo: "BJS-16508-018",
         bloodGroup: "",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
@@ -148,133 +147,199 @@ const committeeMembers = [
     {
         name: "Ananda Kumar Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member10.jpg"
+        photo: "assets/images/members/member10.jpg",
+        registrationNo: "BJS-16508-001",
+        bloodGroup: "B-",
+        responsibilities: ""
     },
 
     {
         name: "Angad Kumar Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member11.jpg"
+        photo: "assets/images/members/member11.jpg",
+        registrationNo: "BJS-16508-002",
+        bloodGroup: "B+",
+        responsibilities: ""
     },
 
     {
         name: "Balaram Barik",
         designation: "Member",
-        photo: "assets/images/members/member12.jpg"
+        photo: "assets/images/members/member12.jpg",
+        registrationNo: "BJS-16508-003",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Biswajeet Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member13.jpg"
+        photo: "assets/images/members/member13.jpg",
+        registrationNo: "BJS-16508-006",
+        bloodGroup: "AB+",
+        responsibilities: ""
     },
 
     {
         name: "Biswaranjan Swain",
         designation: "Member",
-        photo: "assets/images/members/member14.jpg"
+        photo: "assets/images/members/member14.jpg",
+        registrationNo: "BJS-16508-007",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Chinmaya Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member15.jpg"
+        photo: "assets/images/members/member15.jpg",
+        registrationNo: "BJS-16508-008",
+        bloodGroup: "O+",
+        responsibilities: ""
     },
 
     {
         name: "Deepak Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member16.jpg"
+        photo: "assets/images/members/member16.jpg",
+        registrationNo: "BJS-16508-009",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Deepti Ranjan Muduli",
         designation: "Member",
-        photo: "assets/images/members/member17.jpg"
+        photo: "assets/images/members/member17.jpg",
+        registrationNo: "BJS-16508-010",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Dharani Dhar Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member18.jpg"
+        photo: "assets/images/members/member18.jpg",
+        registrationNo: "BJS-16508-011",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Gayana Ranjan Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member19.jpg"
+        photo: "assets/images/members/member19.jpg",
+        registrationNo: "BJS-16508-012",
+        bloodGroup: "B+",
+        responsibilities: ""
     },
 
     {
         name: "Ghanasyam Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member20.jpg"
+        photo: "assets/images/members/member20.jpg",
+        registrationNo: "BJS-16508-014",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Hiranya Barik",
         designation: "Member",
-        photo: "assets/images/members/member21.jpg"
+        photo: "assets/images/members/member21.jpg",
+        registrationNo: "BJS-16508-015",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Jamesh Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member22.jpg"
+        photo: "assets/images/members/member22.jpg",
+        registrationNo: "BJS-16508-017",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Sagar Kumar Muduli",
         designation: "Member",
-        photo: "assets/images/members/member23.jpg"
+        photo: "assets/images/members/member23.jpg",
+        registrationNo: "BJS-16508-023",
+        bloodGroup: "O+",
+        responsibilities: ""
     },
 
     {
         name: "Sagar Swain",
         designation: "Member",
-        photo: "assets/images/members/member24.jpg"
+        photo: "assets/images/members/member24.jpg",
+        registrationNo: "BJS-16508-024",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Samir Kumar Muduli",
         designation: "Member",
-        photo: "assets/images/members/member25.jpg"
+        photo: "assets/images/members/member25.jpg",
+        registrationNo: "BJS-16508-025",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Samira Muduli",
         designation: "Member",
-        photo: "assets/images/members/member26.jpg"
+        photo: "assets/images/members/member26.jpg",
+        registrationNo: "BJS-16508-026",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Subash Kumar Swain",
         designation: "Member",
-        photo: "assets/images/members/member27.jpg"
+        photo: "assets/images/members/member27.jpg",
+        registrationNo: "BJS-16508-031",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Sushil Mallick",
         designation: "Member",
-        photo: "assets/images/members/member28.jpg"
+        photo: "assets/images/members/member28.jpg",
+        registrationNo: "BJS-16508-032",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Tanmaya Kumar Swain",
         designation: "Member",
-        photo: "assets/images/members/member29.jpg"
+        photo: "assets/images/members/member29.jpg",
+        registrationNo: "BJS-16508-033",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Udip Kumar Muduli",
         designation: "Member",
-        photo: "assets/images/members/member30.jpg"
+        photo: "assets/images/members/member30.jpg",
+        registrationNo: "BJS-16508-034",
+        bloodGroup: "",
+        responsibilities: ""
     },
 
     {
         name: "Umesh Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/member31.jpg"
+        photo: "assets/images/members/member31.jpg",
+        registrationNo: "BJS-16508-035",
+        bloodGroup: "",
+        responsibilities: ""
     }
 
 ];
@@ -294,9 +359,7 @@ function createMemberCard(member) {
 
     card.setAttribute("tabindex", "0");
 
-
     card.innerHTML = `
-
         <div class="member-photo">
 
             <img
@@ -307,34 +370,28 @@ function createMemberCard(member) {
 
         </div>
 
-
         <div class="member-info">
 
             <h3>
                 ${member.name}
             </h3>
 
-
             <p class="designation">
                 ${member.designation}
             </p>
-
 
             <span class="view-details">
                 View Details
             </span>
 
         </div>
-
     `;
-
 
     card.addEventListener("click", () => {
 
         openMemberModal(member);
 
     });
-
 
     card.addEventListener("keydown", (event) => {
 
@@ -350,7 +407,6 @@ function createMemberCard(member) {
         }
 
     });
-
 
     return card;
 }
@@ -370,24 +426,19 @@ function createCommitteeSection(
     const section =
         document.createElement("section");
 
-
     section.className =
         `committee-member-section ${sectionClass}`;
 
-
     section.innerHTML = `
-
         <div class="committee-section-heading">
 
             <span class="section-label">
                 BIPLABI JUBAK SANGHA
             </span>
 
-
             <h2>
                 ${title}
             </h2>
-
 
             <p>
                 ${subtitle}
@@ -395,15 +446,11 @@ function createCommitteeSection(
 
         </div>
 
-
         <div class="committee-grid"></div>
-
     `;
-
 
     const grid =
         section.querySelector(".committee-grid");
-
 
     membersList.forEach(member => {
 
@@ -412,7 +459,6 @@ function createCommitteeSection(
         );
 
     });
-
 
     return section;
 }
@@ -434,23 +480,17 @@ function createMemberModal() {
 
     }
 
-
     const modal =
         document.createElement("div");
-
 
     modal.id =
         "member-details-modal";
 
-
     modal.className =
         "member-modal";
 
-
     modal.innerHTML = `
-
         <div class="member-modal-overlay"></div>
-
 
         <div
             class="member-modal-content"
@@ -458,7 +498,6 @@ function createMemberModal() {
             aria-modal="true"
             aria-labelledby="modal-member-name"
         >
-
 
             <button
                 type="button"
@@ -468,9 +507,7 @@ function createMemberModal() {
                 &times;
             </button>
 
-
             <div class="member-modal-body">
-
 
                 <div class="modal-member-photo">
 
@@ -483,28 +520,22 @@ function createMemberModal() {
 
                 </div>
 
-
                 <div class="modal-member-details">
-
 
                     <span
                         id="modal-member-designation"
                         class="modal-designation"
                     ></span>
 
-
                     <h2 id="modal-member-name"></h2>
 
-
                     <div class="member-detail-list">
-
 
                         <div class="member-detail-item">
 
                             <span class="detail-label">
                                 Membership Registration No.
                             </span>
-
 
                             <span
                                 id="modal-member-registration"
@@ -515,13 +546,11 @@ function createMemberModal() {
 
                         </div>
 
-
                         <div class="member-detail-item">
 
                             <span class="detail-label">
                                 Blood Group
                             </span>
-
 
                             <span
                                 id="modal-member-blood"
@@ -532,13 +561,11 @@ function createMemberModal() {
 
                         </div>
 
-
                         <div class="member-detail-item">
 
                             <span class="detail-label">
                                 Responsibilities
                             </span>
-
 
                             <span
                                 id="modal-member-responsibilities"
@@ -549,7 +576,6 @@ function createMemberModal() {
 
                         </div>
 
-
                     </div>
 
                 </div>
@@ -557,12 +583,9 @@ function createMemberModal() {
             </div>
 
         </div>
-
     `;
 
-
     document.body.appendChild(modal);
-
 
     modal
         .querySelector(".member-modal-close")
@@ -570,7 +593,6 @@ function createMemberModal() {
             "click",
             closeMemberModal
         );
-
 
     modal
         .querySelector(".member-modal-overlay")
@@ -592,13 +614,11 @@ function openMemberModal(member) {
             "member-details-modal"
         );
 
-
     if (!modal) {
 
         return;
 
     }
-
 
     document.getElementById(
         "modal-member-image"
@@ -606,24 +626,20 @@ function openMemberModal(member) {
         member.photo ||
         "assets/images/logo.png";
 
-
     document.getElementById(
         "modal-member-image"
     ).alt =
         member.name;
-
 
     document.getElementById(
         "modal-member-name"
     ).textContent =
         member.name;
 
-
     document.getElementById(
         "modal-member-designation"
     ).textContent =
         member.designation;
-
 
     document.getElementById(
         "modal-member-registration"
@@ -631,23 +647,19 @@ function openMemberModal(member) {
         member.registrationNo ||
         "Not Updated";
 
-
     document.getElementById(
         "modal-member-blood"
     ).textContent =
         member.bloodGroup ||
         "Not Updated";
 
-
     document.getElementById(
         "modal-member-responsibilities"
     ).textContent =
         member.responsibilities ||
-        "Participates in organisational and community activities.";
-
+        "Not Updated";
 
     modal.classList.add("active");
-
 
     document.body.classList.add(
         "modal-open"
@@ -667,16 +679,13 @@ function closeMemberModal() {
             "member-details-modal"
         );
 
-
     if (!modal) {
 
         return;
 
     }
 
-
     modal.classList.remove("active");
-
 
     document.body.classList.remove(
         "modal-open"
@@ -696,18 +705,15 @@ function showCommittee(type) {
             "committee-home"
         );
 
-
     const view =
         document.getElementById(
             "committee-view"
         );
 
-
     const container =
         document.getElementById(
             "committee-container"
         );
-
 
     if (
         !home ||
@@ -718,7 +724,6 @@ function showCommittee(type) {
         return;
 
     }
-
 
     container.innerHTML = "";
 
@@ -739,7 +744,6 @@ function showCommittee(type) {
                 "executive-committee-section"
 
             );
-
 
         container.appendChild(section);
 
@@ -762,7 +766,6 @@ function showCommittee(type) {
                 "committee-members-section"
 
             );
-
 
         container.appendChild(section);
 
@@ -798,19 +801,16 @@ function showCommitteeHome() {
             "committee-home"
         );
 
-
     const view =
         document.getElementById(
             "committee-view"
         );
-
 
     if (!home || !view) {
 
         return;
 
     }
-
 
     view.hidden = true;
 
