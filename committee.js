@@ -11,6 +11,8 @@ const executiveMembers = [
         photo: "assets/images/members/president.jpg",
         registrationNo: "BJS-16508-021",
         bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Provides overall leadership, guidance and coordination for the organisation and its activities."
     },
@@ -21,6 +23,8 @@ const executiveMembers = [
         photo: "assets/images/members/vice-president.jpg",
         registrationNo: "BJS-16508-004",
         bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Supports the President and assists in coordinating organisational activities and programmes."
     },
@@ -31,6 +35,8 @@ const executiveMembers = [
         photo: "assets/images/members/secretary.jpg",
         registrationNo: "BJS-16508-019",
         bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Maintains organisational records, notices, correspondence, meetings and official documentation."
     },
@@ -41,6 +47,8 @@ const executiveMembers = [
         photo: "assets/images/members/treasurer.jpg",
         registrationNo: "BJS-16508-022",
         bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Maintains financial records and assists with the management of income, expenses and financial documentation."
     },
@@ -51,6 +59,8 @@ const executiveMembers = [
         photo: "assets/images/members/member5.jpg",
         registrationNo: "BJS-16508-028",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -61,6 +71,8 @@ const executiveMembers = [
         photo: "assets/images/members/member8.jpg",
         registrationNo: "BJS-16508-016",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -71,6 +83,8 @@ const executiveMembers = [
         photo: "assets/images/members/member2.jpg",
         registrationNo: "BJS-16508-020",
         bloodGroup: "A+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -81,6 +95,8 @@ const executiveMembers = [
         photo: "assets/images/members/member4.jpg",
         registrationNo: "BJS-16508-029",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -91,6 +107,8 @@ const executiveMembers = [
         photo: "assets/images/members/member3.jpg",
         registrationNo: "BJS-16508-013",
         bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -101,6 +119,8 @@ const executiveMembers = [
         photo: "assets/images/members/member1.jpg",
         registrationNo: "BJS-16508-005",
         bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -111,6 +131,8 @@ const executiveMembers = [
         photo: "assets/images/members/member6.jpg",
         registrationNo: "BJS-16508-030",
         bloodGroup: "A-",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -121,6 +143,8 @@ const executiveMembers = [
         photo: "assets/images/members/member7.jpg",
         registrationNo: "BJS-16508-027",
         bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     },
@@ -131,6 +155,8 @@ const executiveMembers = [
         photo: "assets/images/members/member9.jpg",
         registrationNo: "BJS-16508-018",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities:
             "Participates in committee decisions, organisational programmes and community development activities."
     }
@@ -150,6 +176,8 @@ const committeeMembers = [
         photo: "assets/images/members/member10.jpg",
         registrationNo: "BJS-16508-001",
         bloodGroup: "B-",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -159,6 +187,8 @@ const committeeMembers = [
         photo: "assets/images/members/member11.jpg",
         registrationNo: "BJS-16508-002",
         bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -168,6 +198,8 @@ const committeeMembers = [
         photo: "assets/images/members/member12.jpg",
         registrationNo: "BJS-16508-003",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -177,6 +209,8 @@ const committeeMembers = [
         photo: "assets/images/members/member13.jpg",
         registrationNo: "BJS-16508-006",
         bloodGroup: "AB+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -186,6 +220,8 @@ const committeeMembers = [
         photo: "assets/images/members/member14.jpg",
         registrationNo: "BJS-16508-007",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -195,6 +231,8 @@ const committeeMembers = [
         photo: "assets/images/members/member15.jpg",
         registrationNo: "BJS-16508-008",
         bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -204,6 +242,8 @@ const committeeMembers = [
         photo: "assets/images/members/member16.jpg",
         registrationNo: "BJS-16508-009",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -213,6 +253,8 @@ const committeeMembers = [
         photo: "assets/images/members/member17.jpg",
         registrationNo: "BJS-16508-010",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -222,6 +264,8 @@ const committeeMembers = [
         photo: "assets/images/members/member18.jpg",
         registrationNo: "BJS-16508-011",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -231,6 +275,8 @@ const committeeMembers = [
         photo: "assets/images/members/member19.jpg",
         registrationNo: "BJS-16508-012",
         bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -240,6 +286,8 @@ const committeeMembers = [
         photo: "assets/images/members/member20.jpg",
         registrationNo: "BJS-16508-014",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -249,6 +297,8 @@ const committeeMembers = [
         photo: "assets/images/members/member21.jpg",
         registrationNo: "BJS-16508-015",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -258,6 +308,8 @@ const committeeMembers = [
         photo: "assets/images/members/member22.jpg",
         registrationNo: "BJS-16508-017",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -267,6 +319,8 @@ const committeeMembers = [
         photo: "assets/images/members/member23.jpg",
         registrationNo: "BJS-16508-023",
         bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -276,6 +330,8 @@ const committeeMembers = [
         photo: "assets/images/members/member24.jpg",
         registrationNo: "BJS-16508-024",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -285,6 +341,8 @@ const committeeMembers = [
         photo: "assets/images/members/member25.jpg",
         registrationNo: "BJS-16508-025",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -294,6 +352,8 @@ const committeeMembers = [
         photo: "assets/images/members/member26.jpg",
         registrationNo: "BJS-16508-026",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -303,6 +363,8 @@ const committeeMembers = [
         photo: "assets/images/members/member27.jpg",
         registrationNo: "BJS-16508-031",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -312,6 +374,8 @@ const committeeMembers = [
         photo: "assets/images/members/member28.jpg",
         registrationNo: "BJS-16508-032",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -321,6 +385,8 @@ const committeeMembers = [
         photo: "assets/images/members/member29.jpg",
         registrationNo: "BJS-16508-033",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -330,6 +396,8 @@ const committeeMembers = [
         photo: "assets/images/members/member30.jpg",
         registrationNo: "BJS-16508-034",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     },
 
@@ -339,6 +407,8 @@ const committeeMembers = [
         photo: "assets/images/members/member31.jpg",
         registrationNo: "BJS-16508-035",
         bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
         responsibilities: ""
     }
 
@@ -531,6 +601,8 @@ function createMemberModal() {
 
                     <div class="member-detail-list">
 
+                        <!-- REGISTRATION NUMBER -->
+
                         <div class="member-detail-item">
 
                             <span class="detail-label">
@@ -546,6 +618,9 @@ function createMemberModal() {
 
                         </div>
 
+
+                        <!-- BLOOD GROUP -->
+
                         <div class="member-detail-item">
 
                             <span class="detail-label">
@@ -560,6 +635,45 @@ function createMemberModal() {
                             </span>
 
                         </div>
+
+
+                        <!-- DATE OF JOINING -->
+
+                        <div class="member-detail-item">
+
+                            <span class="detail-label">
+                                Date of Joining
+                            </span>
+
+                            <span
+                                id="modal-member-joining-date"
+                                class="detail-value"
+                            >
+                                Not Updated
+                            </span>
+
+                        </div>
+
+
+                        <!-- MEMBERSHIP STATUS -->
+
+                        <div class="member-detail-item">
+
+                            <span class="detail-label">
+                                Membership Status
+                            </span>
+
+                            <span
+                                id="modal-member-status"
+                                class="detail-value"
+                            >
+                                Not Updated
+                            </span>
+
+                        </div>
+
+
+                        <!-- RESPONSIBILITIES -->
 
                         <div class="member-detail-item">
 
@@ -587,6 +701,7 @@ function createMemberModal() {
 
     document.body.appendChild(modal);
 
+
     modal
         .querySelector(".member-modal-close")
         .addEventListener(
@@ -594,12 +709,14 @@ function createMemberModal() {
             closeMemberModal
         );
 
+
     modal
         .querySelector(".member-modal-overlay")
         .addEventListener(
             "click",
             closeMemberModal
         );
+
 }
 
 
@@ -620,26 +737,39 @@ function openMemberModal(member) {
 
     }
 
+
+    // MEMBER PHOTO
+
     document.getElementById(
         "modal-member-image"
     ).src =
         member.photo ||
         "assets/images/logo.png";
 
+
     document.getElementById(
         "modal-member-image"
     ).alt =
         member.name;
+
+
+    // MEMBER NAME
 
     document.getElementById(
         "modal-member-name"
     ).textContent =
         member.name;
 
+
+    // DESIGNATION
+
     document.getElementById(
         "modal-member-designation"
     ).textContent =
         member.designation;
+
+
+    // REGISTRATION NUMBER
 
     document.getElementById(
         "modal-member-registration"
@@ -647,17 +777,44 @@ function openMemberModal(member) {
         member.registrationNo ||
         "Not Updated";
 
+
+    // BLOOD GROUP
+
     document.getElementById(
         "modal-member-blood"
     ).textContent =
         member.bloodGroup ||
         "Not Updated";
 
+
+    // DATE OF JOINING
+
+    document.getElementById(
+        "modal-member-joining-date"
+    ).textContent =
+        member.dateOfJoining ||
+        "Not Updated";
+
+
+    // MEMBERSHIP STATUS
+
+    document.getElementById(
+        "modal-member-status"
+    ).textContent =
+        member.membershipStatus ||
+        "Not Updated";
+
+
+    // RESPONSIBILITIES
+
     document.getElementById(
         "modal-member-responsibilities"
     ).textContent =
         member.responsibilities ||
         "Not Updated";
+
+
+    // OPEN MODAL
 
     modal.classList.add("active");
 
@@ -724,6 +881,7 @@ function showCommittee(type) {
         return;
 
     }
+
 
     container.innerHTML = "";
 
@@ -811,6 +969,7 @@ function showCommitteeHome() {
         return;
 
     }
+
 
     view.hidden = true;
 
