@@ -111,7 +111,7 @@ const executiveMembers = [
         dateOfJoining: "01-01-2023",
         membershipStatus: "Active",
         responsibilities:
-            "Supports the organisation in community programmes, events and social activities."
+            "Supports club programmes, activities and community development initiatives."
     },
 
     {
@@ -124,7 +124,7 @@ const executiveMembers = [
         dateOfJoining: "01-01-2023",
         membershipStatus: "Active",
         responsibilities:
-            "Participates in planning and supports various social and community development programmes."
+            "Participates in committee decisions, organisational programmes and community development activities."
     },
 
     {
@@ -137,7 +137,7 @@ const executiveMembers = [
         dateOfJoining: "01-01-2023",
         membershipStatus: "Active",
         responsibilities:
-            "Supports organisational activities and contributes to community welfare initiatives."
+            "Participates in committee decisions, organisational programmes and community development activities."
     },
 
     {
@@ -150,7 +150,7 @@ const executiveMembers = [
         dateOfJoining: "01-01-2023",
         membershipStatus: "Active",
         responsibilities:
-            "Assists in organising club programmes and community service activities."
+            "Participates in committee decisions, organisational programmes and community development activities."
     },
 
     {
@@ -163,7 +163,7 @@ const executiveMembers = [
         dateOfJoining: "01-01-2023",
         membershipStatus: "Active",
         responsibilities:
-            "Supports club activities and participates in community development and social service programmes."
+            "Participates in committee decisions, organisational programmes and community development activities."
     },
 
     {
@@ -176,7 +176,7 @@ const executiveMembers = [
         dateOfJoining: "01-01-2023",
         membershipStatus: "Active",
         responsibilities:
-            "Participates in organisational planning and supports social and community welfare activities."
+            "Participates in committee decisions, organisational programmes and community development activities."
     }
 
 ];
@@ -196,9 +196,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-001",
         bloodGroup: "B-",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in club activities and supports community service and development programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -209,9 +207,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-002",
         bloodGroup: "B+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports organisational activities and participates in community development programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -222,9 +218,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-003",
         bloodGroup: "A-",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in social service activities and supports the organisation's programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -235,9 +229,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-006",
         bloodGroup: "AB+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports club programmes and contributes to community welfare activities."
+        membershipStatus: "Active"
     },
 
     {
@@ -248,9 +240,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-007",
         bloodGroup: "A+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in community service, social activities and organisational programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -261,9 +251,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-008",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports community development and participates in club activities and programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -274,9 +262,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-009",
         bloodGroup: "",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in organisational activities and supports social service programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -287,9 +273,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-010",
         bloodGroup: "",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports the organisation's community service and development activities."
+        membershipStatus: "Active"
     },
 
     {
@@ -300,9 +284,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-011",
         bloodGroup: "B-",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in community programmes and supports social welfare activities."
+        membershipStatus: "Active"
     },
 
     {
@@ -313,9 +295,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-012",
         bloodGroup: "B+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports organisational programmes and participates in community development activities."
+        membershipStatus: "Active"
     },
 
     {
@@ -326,9 +306,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-014",
         bloodGroup: "",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in club activities and supports community service initiatives."
+        membershipStatus: "Active"
     },
 
     {
@@ -339,9 +317,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-015",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports social service programmes and participates in community development activities."
+        membershipStatus: "Active"
     },
 
     {
@@ -352,9 +328,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-017",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in club programmes and supports community welfare activities."
+        membershipStatus: "Active"
     },
 
     {
@@ -365,9 +339,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-023",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports organisational activities and participates in social and community service programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -378,9 +350,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-024",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in community activities and supports social development programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -391,9 +361,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-025",
         bloodGroup: "B+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports club activities and participates in community service programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -404,9 +372,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-026",
         bloodGroup: "A+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in organisational activities and supports community development programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -417,9 +383,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-031",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports social service activities and participates in community development programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -430,9 +394,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-032",
         bloodGroup: "B+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in community service and supports various club programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -443,9 +405,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-033",
         bloodGroup: "A+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports organisational activities and participates in social and community development programmes."
+        membershipStatus: "Active"
     },
 
     {
@@ -456,9 +416,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-034",
         bloodGroup: "",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in club activities and supports community service initiatives."
+        membershipStatus: "Active"
     },
 
     {
@@ -469,9 +427,7 @@ const committeeMembers = [
         registrationNo: "BJS-16508-035",
         bloodGroup: "A+",
         dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports community development programmes and participates in organisational activities."
+        membershipStatus: "Active"
     }
 
 ];
@@ -482,6 +438,7 @@ const committeeMembers = [
 // ============================================================
 
 function getMemberPhoto(photo) {
+
     if (!photo) {
         return "assets/images/logo.png";
     }
@@ -502,12 +459,13 @@ function createMemberCard(member) {
 
     card.innerHTML = `
         <div class="member-photo">
+
             <img
                 src="${getMemberPhoto(member.photo)}"
                 alt="${member.name}"
                 loading="lazy"
-                onerror="this.onerror=null;this.src='assets/images/logo.png';"
-            >
+                onerror="this.onerror=null;this.src='assets/images/logo.png';">
+
         </div>
 
         <div class="member-info">
@@ -518,23 +476,17 @@ function createMemberCard(member) {
                 ${member.designation}
             </p>
 
-            <button
-                type="button"
-                class="view-details"
-            >
-                View Details
-            </button>
-
         </div>
     `;
 
-    const button = card.querySelector(".view-details");
 
-    if (button) {
-        button.addEventListener("click", function () {
-            openMemberModal(member);
-        });
-    }
+    // CLICK MEMBER CARD → OPEN POPUP
+    card.addEventListener("click", function () {
+
+        openMemberModal(member);
+
+    });
+
 
     return card;
 }
@@ -548,7 +500,6 @@ function createCommitteeSection(title, members) {
 
     const section = document.createElement("section");
 
-    // Match existing CSS
     section.className = "committee-member-section";
 
     section.innerHTML = `
@@ -556,16 +507,17 @@ function createCommitteeSection(title, members) {
 
             <h2>${title}</h2>
 
-            <p>
-                ${members.length} Members
-            </p>
+            <p>${members.length} Members</p>
 
         </div>
 
         <div class="committee-grid"></div>
     `;
 
-    const grid = section.querySelector(".committee-grid");
+
+    const grid =
+        section.querySelector(".committee-grid");
+
 
     members.forEach(function (member) {
 
@@ -574,6 +526,7 @@ function createCommitteeSection(title, members) {
         );
 
     });
+
 
     return section;
 }
@@ -589,11 +542,18 @@ function createMemberModal() {
         return;
     }
 
-    const modal = document.createElement("div");
 
-    modal.id = "memberDetailsModal";
+    const modal =
+        document.createElement("div");
 
-    modal.className = "member-modal";
+
+    modal.id =
+        "memberDetailsModal";
+
+
+    modal.className =
+        "member-modal";
+
 
     modal.innerHTML = `
         <div class="member-modal-overlay"></div>
@@ -601,137 +561,193 @@ function createMemberModal() {
         <div
             class="member-modal-content"
             role="dialog"
-            aria-modal="true"
-        >
+            aria-modal="true">
+
+            <!-- CLOSE BUTTON -->
 
             <button
                 type="button"
                 class="member-modal-close"
                 id="member-modal-close"
-                aria-label="Close"
-            >
+                aria-label="Close">
                 &times;
             </button>
 
-            <div class="member-modal-body">
 
-                <div class="modal-member-photo">
+            <!-- LEFT SIDE - PHOTO -->
 
-                    <img
-                        id="modal-member-photo"
-                        src="assets/images/logo.png"
-                        alt="Member Photo"
-                    >
+            <div class="modal-member-photo">
 
+                <img
+                    id="modal-member-photo"
+                    src="assets/images/logo.png"
+                    alt="Member Photo">
+
+            </div>
+
+
+            <!-- RIGHT SIDE - DETAILS -->
+
+            <div class="modal-member-details">
+
+                <!-- DESIGNATION BADGE -->
+
+                <div
+                    class="modal-member-badge"
+                    id="modal-member-badge">
+                    Member
                 </div>
 
-                <div class="modal-member-details">
 
-                    <h2 id="modal-member-name">
-                        Member Name
-                    </h2>
+                <!-- MEMBER NAME -->
 
-                    <div class="member-detail-list">
+                <h2 id="modal-member-name">
+                    Member Name
+                </h2>
 
-                        <div class="member-detail-item">
-                            <span class="detail-label">
-                                Designation
-                            </span>
-                            <span
-                                class="detail-value"
-                                id="modal-member-designation"
-                            ></span>
-                        </div>
 
-                        <div class="member-detail-item">
-                            <span class="detail-label">
-                                Father's Name
-                            </span>
-                            <span
-                                class="detail-value"
-                                id="modal-member-father"
-                            ></span>
-                        </div>
+                <!-- FATHER'S NAME -->
 
-                        <div class="member-detail-item">
-                            <span class="detail-label">
-                                Membership Registration No.
-                            </span>
-                            <span
-                                class="detail-value"
-                                id="modal-member-registration"
-                            ></span>
-                        </div>
+                <div class="modal-detail-row">
 
-                        <div class="member-detail-item">
-                            <span class="detail-label">
-                                Blood Group
-                            </span>
-                            <span
-                                class="detail-value"
-                                id="modal-member-blood"
-                            ></span>
-                        </div>
-
-                        <div class="member-detail-item">
-                            <span class="detail-label">
-                                Date of Joining
-                            </span>
-                            <span
-                                class="detail-value"
-                                id="modal-member-date"
-                            ></span>
-                        </div>
-
-                        <div class="member-detail-item">
-                            <span class="detail-label">
-                                Membership Status
-                            </span>
-                            <span
-                                class="detail-value"
-                                id="modal-member-status"
-                            ></span>
-                        </div>
-
+                    <div class="modal-detail-label">
+                        Father's Name
                     </div>
 
-                    <div class="modal-responsibilities">
-
-                        <strong>
-                            Responsibilities:
-                        </strong>
-
-                        <p id="modal-member-responsibilities"></p>
-
+                    <div
+                        class="modal-detail-value"
+                        id="modal-member-father">
                     </div>
 
                 </div>
+
+
+                <!-- MEMBERSHIP REGISTRATION NUMBER -->
+
+                <div class="modal-detail-row">
+
+                    <div class="modal-detail-label">
+                        Membership Registration No.
+                    </div>
+
+                    <div
+                        class="modal-detail-value"
+                        id="modal-member-registration">
+                    </div>
+
+                </div>
+
+
+                <!-- BLOOD GROUP -->
+
+                <div class="modal-detail-row">
+
+                    <div class="modal-detail-label">
+                        Blood Group
+                    </div>
+
+                    <div
+                        class="modal-detail-value"
+                        id="modal-member-blood">
+                    </div>
+
+                </div>
+
+
+                <!-- DATE OF JOINING -->
+
+                <div class="modal-detail-row">
+
+                    <div class="modal-detail-label">
+                        Date of Joining
+                    </div>
+
+                    <div
+                        class="modal-detail-value"
+                        id="modal-member-date">
+                    </div>
+
+                </div>
+
+
+                <!-- MEMBERSHIP STATUS -->
+
+                <div class="modal-detail-row">
+
+                    <div class="modal-detail-label">
+                        Membership Status
+                    </div>
+
+                    <div
+                        class="modal-detail-value"
+                        id="modal-member-status">
+                    </div>
+
+                </div>
+
+
+                <!-- EXECUTIVE RESPONSIBILITIES
+                     Only appears when responsibilities exist -->
+
+                <div
+                    class="modal-detail-row modal-responsibilities-row"
+                    id="modal-member-responsibilities-row"
+                    style="display: none;">
+
+                    <div class="modal-detail-label">
+                        Responsibilities
+                    </div>
+
+                    <div
+                        class="modal-detail-value"
+                        id="modal-member-responsibilities">
+                    </div>
+
+                </div>
+
 
             </div>
 
         </div>
     `;
 
+
     document.body.appendChild(modal);
 
-    const closeButton =
-        document.getElementById("member-modal-close");
 
-    const overlay =
-        modal.querySelector(".member-modal-overlay");
+    // CLOSE BUTTON
+
+    const closeButton =
+        document.getElementById(
+            "member-modal-close"
+        );
+
 
     if (closeButton) {
+
         closeButton.addEventListener(
             "click",
             closeMemberModal
         );
+
     }
 
+
+    // CLICK OUTSIDE POPUP
+
+    const overlay =
+        modal.querySelector(
+            ".member-modal-overlay"
+        );
+
+
     if (overlay) {
+
         overlay.addEventListener(
             "click",
             closeMemberModal
         );
+
     }
 }
 
@@ -744,40 +760,81 @@ function openMemberModal(member) {
 
     createMemberModal();
 
+
     const modal =
-        document.getElementById("memberDetailsModal");
+        document.getElementById(
+            "memberDetailsModal"
+        );
+
 
     if (!modal) {
         return;
     }
 
+
     const photo =
-        document.getElementById("modal-member-photo");
+        document.getElementById(
+            "modal-member-photo"
+        );
+
+
+    const badge =
+        document.getElementById(
+            "modal-member-badge"
+        );
+
 
     const name =
-        document.getElementById("modal-member-name");
+        document.getElementById(
+            "modal-member-name"
+        );
 
-    const designation =
-        document.getElementById("modal-member-designation");
 
     const father =
-        document.getElementById("modal-member-father");
+        document.getElementById(
+            "modal-member-father"
+        );
+
 
     const registration =
-        document.getElementById("modal-member-registration");
+        document.getElementById(
+            "modal-member-registration"
+        );
+
 
     const blood =
-        document.getElementById("modal-member-blood");
+        document.getElementById(
+            "modal-member-blood"
+        );
+
 
     const date =
-        document.getElementById("modal-member-date");
+        document.getElementById(
+            "modal-member-date"
+        );
+
 
     const status =
-        document.getElementById("modal-member-status");
+        document.getElementById(
+            "modal-member-status"
+        );
+
+
+    const responsibilitiesRow =
+        document.getElementById(
+            "modal-member-responsibilities-row"
+        );
+
 
     const responsibilities =
-        document.getElementById("modal-member-responsibilities");
+        document.getElementById(
+            "modal-member-responsibilities"
+        );
 
+
+    // ========================================================
+    // MEMBER PHOTO
+    // ========================================================
 
     if (photo) {
 
@@ -785,7 +842,8 @@ function openMemberModal(member) {
             getMemberPhoto(member.photo);
 
         photo.alt =
-            member.name;
+            member.name || "Member Photo";
+
 
         photo.onerror = function () {
 
@@ -795,53 +853,136 @@ function openMemberModal(member) {
                 "assets/images/logo.png";
 
         };
+    }
+
+
+    // ========================================================
+    // DESIGNATION BADGE
+    // ========================================================
+
+    if (badge) {
+
+        badge.textContent =
+            member.designation || "Member";
 
     }
 
+
+    // ========================================================
+    // MEMBER NAME
+    // ========================================================
 
     if (name) {
+
         name.textContent =
             member.name || "Not Updated";
+
     }
 
-    if (designation) {
-        designation.textContent =
-            member.designation || "Not Updated";
-    }
+
+    // ========================================================
+    // FATHER'S NAME
+    // ========================================================
 
     if (father) {
+
         father.textContent =
             member.fatherName || "Not Updated";
+
     }
+
+
+    // ========================================================
+    // REGISTRATION NUMBER
+    // ========================================================
 
     if (registration) {
+
         registration.textContent =
             member.registrationNo || "Not Updated";
+
     }
+
+
+    // ========================================================
+    // BLOOD GROUP
+    // ========================================================
 
     if (blood) {
+
         blood.textContent =
             member.bloodGroup || "Not Updated";
+
     }
+
+
+    // ========================================================
+    // DATE OF JOINING
+    // ========================================================
 
     if (date) {
+
         date.textContent =
             member.dateOfJoining || "Not Updated";
+
     }
+
+
+    // ========================================================
+    // MEMBERSHIP STATUS
+    // ========================================================
 
     if (status) {
+
         status.textContent =
             member.membershipStatus || "Not Updated";
-    }
 
-    if (responsibilities) {
-        responsibilities.textContent =
-            member.responsibilities || "Not Updated";
     }
 
 
-    // IMPORTANT:
-    // CSS uses .active, not .show
+    // ========================================================
+    // RESPONSIBILITIES
+    // ONLY EXECUTIVE MEMBERS HAVE THIS FIELD
+    // ========================================================
+
+    if (member.responsibilities) {
+
+        if (responsibilities) {
+
+            responsibilities.textContent =
+                member.responsibilities;
+
+        }
+
+
+        if (responsibilitiesRow) {
+
+            responsibilitiesRow.style.display =
+                "grid";
+
+        }
+
+    } else {
+
+        if (responsibilities) {
+
+            responsibilities.textContent = "";
+
+        }
+
+
+        if (responsibilitiesRow) {
+
+            responsibilitiesRow.style.display =
+                "none";
+
+        }
+    }
+
+
+    // ========================================================
+    // SHOW POPUP
+    // ========================================================
 
     modal.classList.add("active");
 
@@ -856,11 +997,15 @@ function openMemberModal(member) {
 function closeMemberModal() {
 
     const modal =
-        document.getElementById("memberDetailsModal");
+        document.getElementById(
+            "memberDetailsModal"
+        );
+
 
     if (!modal) {
         return;
     }
+
 
     modal.classList.remove("active");
 
@@ -875,13 +1020,22 @@ function closeMemberModal() {
 function showCommittee(type) {
 
     const home =
-        document.getElementById("committee-home");
+        document.getElementById(
+            "committee-home"
+        );
+
 
     const view =
-        document.getElementById("committee-view");
+        document.getElementById(
+            "committee-view"
+        );
+
 
     const container =
-        document.getElementById("committee-container");
+        document.getElementById(
+            "committee-container"
+        );
+
 
     if (!home || !view || !container) {
 
@@ -896,6 +1050,10 @@ function showCommittee(type) {
     container.innerHTML = "";
 
 
+    // ========================================================
+    // EXECUTIVE COMMITTEE
+    // ========================================================
+
     if (type === "executive") {
 
         container.appendChild(
@@ -907,6 +1065,10 @@ function showCommittee(type) {
 
     }
 
+
+    // ========================================================
+    // COMMITTEE MEMBERS
+    // ========================================================
 
     if (type === "members") {
 
@@ -920,15 +1082,22 @@ function showCommittee(type) {
     }
 
 
-    home.style.display = "none";
+    // HIDE HOME
 
-    // IMPORTANT:
-    // Remove the HTML hidden attribute
+    home.style.display =
+        "none";
 
-    view.hidden = false;
 
-    view.style.display = "block";
+    // SHOW COMMITTEE VIEW
 
+    view.hidden =
+        false;
+
+    view.style.display =
+        "block";
+
+
+    // SCROLL TO TOP
 
     window.scrollTo({
         top: 0,
@@ -944,24 +1113,32 @@ function showCommittee(type) {
 function showCommitteeHome() {
 
     const home =
-        document.getElementById("committee-home");
+        document.getElementById(
+            "committee-home"
+        );
+
 
     const view =
-        document.getElementById("committee-view");
+        document.getElementById(
+            "committee-view"
+        );
 
 
     if (view) {
 
-        view.hidden = true;
+        view.hidden =
+            true;
 
-        view.style.display = "none";
+        view.style.display =
+            "none";
 
     }
 
 
     if (home) {
 
-        home.style.display = "block";
+        home.style.display =
+            "block";
 
     }
 
@@ -980,13 +1157,21 @@ function showCommitteeHome() {
 function loadCommittee() {
 
     const home =
-        document.getElementById("committee-home");
+        document.getElementById(
+            "committee-home"
+        );
+
 
     const view =
-        document.getElementById("committee-view");
+        document.getElementById(
+            "committee-view"
+        );
+
 
     const container =
-        document.getElementById("committee-container");
+        document.getElementById(
+            "committee-container"
+        );
 
 
     if (!home) {
@@ -1019,17 +1204,24 @@ function loadCommittee() {
     }
 
 
-    // Show home when page loads
+    // ========================================================
+    // INITIAL STATE
+    // ========================================================
 
-    home.style.display = "block";
+    home.style.display =
+        "block";
 
-    view.hidden = true;
 
-    view.style.display = "none";
+    view.hidden =
+        true;
+
+
+    view.style.display =
+        "none";
 
 
     // ========================================================
-    // EXECUTIVE BUTTON
+    // EXECUTIVE COMMITTEE BUTTON
     // ========================================================
 
     const executiveButton =
@@ -1037,13 +1229,16 @@ function loadCommittee() {
             '[data-section="executive"]'
         );
 
+
     if (executiveButton) {
 
         executiveButton.addEventListener(
             "click",
             function () {
 
-                showCommittee("executive");
+                showCommittee(
+                    "executive"
+                );
 
             }
         );
@@ -1060,13 +1255,16 @@ function loadCommittee() {
             '[data-section="members"]'
         );
 
+
     if (membersButton) {
 
         membersButton.addEventListener(
             "click",
             function () {
 
-                showCommittee("members");
+                showCommittee(
+                    "members"
+                );
 
             }
         );
@@ -1083,6 +1281,7 @@ function loadCommittee() {
             "committee-back"
         );
 
+
     if (backButton) {
 
         backButton.addEventListener(
@@ -1096,7 +1295,6 @@ function loadCommittee() {
     console.log(
         "Biplabi Jubak Sangha Committee loaded successfully."
     );
-
 }
 
 

@@ -3,6 +3,11 @@
    COMMITTEE PAGE
    ========================================================= */
 
+
+/* =========================================================
+   COMMITTEE PAGE
+   ========================================================= */
+
 .committee-page {
     background: #f5f6f8;
     min-height: 100vh;
@@ -609,7 +614,11 @@
 
 
 /* =========================================================
-   DESIGNATION
+   DESIGNATION BADGE
+   =========================================================
+   This remains below the photo/name.
+   There is NO "View Details" button.
+   The complete card itself opens the popup.
    ========================================================= */
 
 .member-card .designation {
@@ -629,30 +638,17 @@
     font-size: 13px;
     font-weight: 600;
 
-    margin: 0 0 15px;
+    margin: 0;
 }
 
 
 /* =========================================================
-   VIEW DETAILS
+   REMOVE OLD VIEW DETAILS
    ========================================================= */
 
-.view-details {
-    display: block;
-
-    color: #172554;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    margin-top: 4px;
-}
-
-
-.view-details::after {
-    content: " →";
-
-    color: #d4af37;
+.view-details,
+.view-details-btn {
+    display: none !important;
 }
 
 
@@ -700,6 +696,10 @@ body.modal-open {
 }
 
 
+/* =========================================================
+   MODAL BACKGROUND
+   ========================================================= */
+
 .member-modal-overlay {
     position: absolute;
 
@@ -711,6 +711,10 @@ body.modal-open {
     backdrop-filter: blur(4px);
 }
 
+
+/* =========================================================
+   MODAL WHITE BOX
+   ========================================================= */
 
 .member-modal-content {
     position: relative;
@@ -744,6 +748,10 @@ body.modal-open {
 }
 
 
+/* =========================================================
+   MODAL CLOSE BUTTON
+   ========================================================= */
+
 .member-modal-close {
     position: absolute;
 
@@ -768,6 +776,11 @@ body.modal-open {
     line-height: 1;
 
     cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
 
@@ -775,8 +788,14 @@ body.modal-open {
     background: #172554;
 
     color: #ffffff;
+
+    transform: rotate(90deg);
 }
 
+
+/* =========================================================
+   MODAL BODY
+   ========================================================= */
 
 .member-modal-body {
     display: grid;
@@ -789,6 +808,10 @@ body.modal-open {
     padding: 45px;
 }
 
+
+/* =========================================================
+   MODAL PHOTO
+   ========================================================= */
 
 .modal-member-photo {
     width: 220px;
@@ -806,6 +829,8 @@ body.modal-open {
 
     box-shadow:
         0 10px 30px rgba(15, 23, 42, 0.18);
+
+    background: #f8fafc;
 }
 
 
@@ -814,20 +839,31 @@ body.modal-open {
     height: 100%;
 
     object-fit: cover;
+
+    display: block;
 }
 
+
+/* =========================================================
+   MODAL DETAILS
+   ========================================================= */
 
 .modal-member-details {
     align-self: center;
 }
 
 
-.modal-designation {
+/* =========================================================
+   MODAL DESIGNATION
+   ========================================================= */
+
+.modal-designation,
+.modal-member-badge {
     display: inline-block;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 
-    padding: 6px 14px;
+    padding: 6px 15px;
 
     border-radius: 20px;
 
@@ -843,23 +879,36 @@ body.modal-open {
 }
 
 
+/* =========================================================
+   MODAL MEMBER NAME
+   ========================================================= */
+
 .modal-member-details h2 {
     margin: 0 0 24px;
 
     color: #172554;
 
     font-size: 30px;
+    font-weight: 700;
 
     line-height: 1.25;
 }
 
 
+/* =========================================================
+   MODAL DETAIL LIST
+   ========================================================= */
+
 .member-detail-list {
     display: grid;
 
-    gap: 13px;
+    gap: 0;
 }
 
+
+/* =========================================================
+   MODAL DETAIL ITEM
+   ========================================================= */
 
 .member-detail-item {
     display: grid;
@@ -876,21 +925,71 @@ body.modal-open {
 }
 
 
+/* =========================================================
+   MODAL DETAIL LABEL
+   ========================================================= */
+
 .detail-label {
     color: #64748b;
 
     font-size: 13px;
 
     font-weight: 700;
+
+    line-height: 1.5;
 }
 
+
+/* =========================================================
+   MODAL DETAIL VALUE
+   ========================================================= */
 
 .detail-value {
     color: #172554;
 
     font-size: 14px;
+    font-weight: 500;
 
     line-height: 1.6;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   MEMBERSHIP STATUS
+   ========================================================= */
+
+.detail-value.status-active {
+    color: #15803d;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FATHER'S NAME
+   ========================================================= */
+
+#modal-member-father {
+    color: #172554;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   OLD MODAL CLASSES
+   =========================================================
+   These are hidden so old popup elements do not appear
+   accidentally if they still exist in the JavaScript.
+   ========================================================= */
+
+.modal-detail-row,
+.modal-detail-label,
+.modal-detail-value,
+.modal-responsibilities {
+    display: none;
 }
 
 
@@ -957,6 +1056,11 @@ body.modal-open {
         width: 180px;
         height: 180px;
     }
+
+    .member-detail-item {
+        grid-template-columns:
+            160px 1fr;
+    }
 }
 
 
@@ -972,19 +1076,23 @@ body.modal-open {
         padding: 55px 20px;
     }
 
+
     .banner-small {
         font-size: 11px;
 
         letter-spacing: 2px;
     }
 
+
     .banner-content h1 {
         font-size: 32px;
     }
 
+
     .banner-content p {
         font-size: 14px;
     }
+
 
     .committee-section {
         width: 90%;
@@ -992,17 +1100,21 @@ body.modal-open {
         padding: 50px 0 60px;
     }
 
+
     .section-heading {
         margin-bottom: 35px;
     }
+
 
     .section-heading h2 {
         font-size: 28px;
     }
 
+
     .section-heading p {
         font-size: 14px;
     }
+
 
     .committee-choice {
         min-height: 160px;
@@ -1011,6 +1123,7 @@ body.modal-open {
 
         gap: 15px;
     }
+
 
     .choice-icon {
         flex-basis: 58px;
@@ -1023,17 +1136,21 @@ body.modal-open {
         font-size: 23px;
     }
 
+
     .choice-content h3 {
         font-size: 20px;
     }
+
 
     .choice-content p {
         font-size: 13px;
     }
 
+
     .committee-section-heading h2 {
         font-size: 27px;
     }
+
 
     .committee-grid {
         grid-template-columns: 1fr;
@@ -1044,18 +1161,35 @@ body.modal-open {
             0 18px 25px;
     }
 
+
     .member-card {
         padding: 28px 20px;
     }
+
 
     .member-photo {
         width: 95px;
         height: 95px;
     }
 
+
+    /* -----------------------------------------
+       MOBILE POPUP
+       ----------------------------------------- */
+
     .member-modal {
         padding: 12px;
     }
+
+
+    .member-modal-content {
+        width: 100%;
+
+        max-height: 92vh;
+
+        border-radius: 20px;
+    }
+
 
     .member-modal-body {
         grid-template-columns: 1fr;
@@ -1067,25 +1201,97 @@ body.modal-open {
         text-align: center;
     }
 
+
     .modal-member-photo {
         width: 145px;
         height: 145px;
     }
 
+
     .modal-member-details h2 {
         font-size: 24px;
+
+        margin-bottom: 20px;
     }
+
+
+    .member-detail-list {
+        text-align: left;
+    }
+
 
     .member-detail-item {
         grid-template-columns: 1fr;
 
         gap: 4px;
 
+        padding: 12px 0;
+
         text-align: left;
     }
 
+
+    .detail-label {
+        font-size: 12px;
+    }
+
+
+    .detail-value {
+        font-size: 14px;
+    }
+
+
     .member-modal-close {
         top: 10px;
+
         right: 10px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .committee-choice {
+        padding: 20px 15px;
+    }
+
+
+    .choice-icon {
+        flex-basis: 50px;
+
+        width: 50px;
+        height: 50px;
+
+        font-size: 20px;
+    }
+
+
+    .choice-content h3 {
+        font-size: 18px;
+    }
+
+
+    .member-card {
+        padding: 25px 15px;
+    }
+
+
+    .member-info h3 {
+        font-size: 18px;
+    }
+
+
+    .member-modal-body {
+        padding:
+            38px 16px 22px;
     }
 }
