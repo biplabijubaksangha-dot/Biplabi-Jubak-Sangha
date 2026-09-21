@@ -1,8 +1,12 @@
 // ============================================================
 // BIPLABI JUBAK SANGHA
-// COMMITTEE MEMBERS
+// COMMITTEE MEMBERS JAVASCRIPT
 // ============================================================
 
+
+// ============================================================
+// EXECUTIVE COMMITTEE
+// ============================================================
 
 const executiveMembers = [
 
@@ -181,7 +185,6 @@ const executiveMembers = [
 // ============================================================
 // COMMITTEE MEMBERS
 // ============================================================
-
 
 const committeeMembers = [
 
@@ -475,9 +478,23 @@ const committeeMembers = [
 
 
 // ============================================================
-// CREATE MEMBER CARD
+// PHOTO PATH
 // ============================================================
 
+function getMemberPhoto(photo) {
+
+    if (!photo) {
+        return "assets/images/logo.png";
+    }
+
+    return photo;
+
+}
+
+
+// ============================================================
+// CREATE MEMBER CARD
+// ============================================================
 
 function createMemberCard(member) {
 
@@ -486,15 +503,13 @@ function createMemberCard(member) {
     card.className = "member-card";
 
     card.innerHTML = `
-
         <div class="member-photo">
-
             <img
-                src="${member.photo}"
+                src="${getMemberPhoto(member.photo)}"
                 alt="${member.name}"
-                onerror="this.onerror=null; this.src='assets/images/logo.png';"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='assets/images/logo.png';"
             >
-
         </div>
 
         <div class="member-info">
@@ -506,30 +521,25 @@ function createMemberCard(member) {
             </p>
 
             <button
-                class="view-details-btn"
                 type="button"
+                class="view-details-btn"
             >
                 View Details
             </button>
 
         </div>
-
     `;
 
     const button =
         card.querySelector(".view-details-btn");
 
     if (button) {
-
-        button.addEventListener(
-            "click",
-            () => openMemberModal(member)
-        );
-
+        button.addEventListener("click", function () {
+            openMemberModal(member);
+        });
     }
 
     return card;
-
 }
 
 
@@ -537,11 +547,7 @@ function createMemberCard(member) {
 // CREATE COMMITTEE SECTION
 // ============================================================
 
-
-function createCommitteeSection(
-    title,
-    members
-) {
+function createCommitteeSection(title, members) {
 
     const section =
         document.createElement("section");
@@ -550,7 +556,6 @@ function createCommitteeSection(
         "committee-members-section";
 
     section.innerHTML = `
-
         <div class="committee-section-heading">
 
             <h2>${title}</h2>
@@ -562,31 +567,26 @@ function createCommitteeSection(
         </div>
 
         <div class="members-grid"></div>
-
     `;
 
     const grid =
         section.querySelector(".members-grid");
 
-    members.forEach(
-        member => {
+    members.forEach(function (member) {
 
-            grid.appendChild(
-                createMemberCard(member)
-            );
+        grid.appendChild(
+            createMemberCard(member)
+        );
 
-        }
-    );
+    });
 
     return section;
-
 }
 
 
 // ============================================================
 // CREATE MEMBER MODAL
 // ============================================================
-
 
 function createMemberModal() {
 
@@ -595,9 +595,7 @@ function createMemberModal() {
             "memberDetailsModal"
         )
     ) {
-
         return;
-
     }
 
     const modal =
@@ -610,14 +608,12 @@ function createMemberModal() {
         "member-modal";
 
     modal.innerHTML = `
-
         <div class="member-modal-overlay"></div>
 
         <div
             class="member-modal-content"
             role="dialog"
             aria-modal="true"
-            aria-labelledby="modal-member-name"
         >
 
             <button
@@ -688,11 +684,9 @@ function createMemberModal() {
             </div>
 
         </div>
-
     `;
 
     document.body.appendChild(modal);
-
 
     const closeButton =
         document.getElementById(
@@ -704,7 +698,6 @@ function createMemberModal() {
             ".member-modal-overlay"
         );
 
-
     if (closeButton) {
 
         closeButton.addEventListener(
@@ -714,7 +707,6 @@ function createMemberModal() {
 
     }
 
-
     if (overlay) {
 
         overlay.addEventListener(
@@ -723,23 +715,6 @@ function createMemberModal() {
         );
 
     }
-
-
-    document.addEventListener(
-        "keydown",
-        event => {
-
-            if (
-                event.key === "Escape"
-            ) {
-
-                closeMemberModal();
-
-            }
-
-        }
-    );
-
 }
 
 
@@ -747,11 +722,9 @@ function createMemberModal() {
 // OPEN MEMBER MODAL
 // ============================================================
 
-
 function openMemberModal(member) {
 
     createMemberModal();
-
 
     const modal =
         document.getElementById(
@@ -759,11 +732,8 @@ function openMemberModal(member) {
         );
 
     if (!modal) {
-
         return;
-
     }
-
 
     const photo =
         document.getElementById(
@@ -814,11 +784,10 @@ function openMemberModal(member) {
     if (photo) {
 
         photo.src =
-            member.photo ||
-            "assets/images/logo.png";
+            getMemberPhoto(member.photo);
 
         photo.alt =
-            member.name || "Member Photo";
+            member.name;
 
         photo.onerror =
             function () {
@@ -834,67 +803,43 @@ function openMemberModal(member) {
 
 
     if (name) {
-
         name.textContent =
             member.name || "Not Updated";
-
     }
-
 
     if (designation) {
-
         designation.textContent =
             member.designation || "Not Updated";
-
     }
-
 
     if (father) {
-
         father.textContent =
             member.fatherName || "Not Updated";
-
     }
-
 
     if (registration) {
-
         registration.textContent =
             member.registrationNo || "Not Updated";
-
     }
-
 
     if (blood) {
-
         blood.textContent =
             member.bloodGroup || "Not Updated";
-
     }
-
 
     if (date) {
-
         date.textContent =
             member.dateOfJoining || "Not Updated";
-
     }
-
 
     if (status) {
-
         status.textContent =
             member.membershipStatus || "Not Updated";
-
     }
 
-
     if (responsibilities) {
-
         responsibilities.textContent =
-            member.responsibilities ||
-            "Not Updated";
-
+            member.responsibilities || "Not Updated";
     }
 
 
@@ -903,14 +848,12 @@ function openMemberModal(member) {
     document.body.classList.add(
         "member-modal-open"
     );
-
 }
 
 
 // ============================================================
 // CLOSE MEMBER MODAL
 // ============================================================
-
 
 function closeMemberModal() {
 
@@ -920,25 +863,20 @@ function closeMemberModal() {
         );
 
     if (!modal) {
-
         return;
-
     }
-
 
     modal.classList.remove("show");
 
     document.body.classList.remove(
         "member-modal-open"
     );
-
 }
 
 
 // ============================================================
 // SHOW COMMITTEE
 // ============================================================
-
 
 function showCommittee(type) {
 
@@ -959,8 +897,11 @@ function showCommittee(type) {
 
     if (!home || !view || !container) {
 
-        return;
+        console.error(
+            "Committee elements were not found."
+        );
 
+        return;
     }
 
 
@@ -1000,14 +941,12 @@ function showCommittee(type) {
         top: 0,
         behavior: "smooth"
     });
-
 }
 
 
 // ============================================================
-// SHOW COMMITTEE HOME
+// RETURN TO COMMITTEE HOME
 // ============================================================
-
 
 function showCommitteeHome() {
 
@@ -1023,13 +962,15 @@ function showCommitteeHome() {
 
 
     if (view) {
-
         view.style.display = "none";
-
     }
 
 
     if (home) {
+
+        // IMPORTANT:
+        // Make sure the two Committee buttons
+        // are visible when the page loads.
 
         home.style.display = "block";
 
@@ -1040,7 +981,6 @@ function showCommitteeHome() {
         top: 0,
         behavior: "smooth"
     });
-
 }
 
 
@@ -1048,67 +988,123 @@ function showCommitteeHome() {
 // LOAD COMMITTEE
 // ============================================================
 
-
 function loadCommittee() {
 
-    createMemberModal();
+    const home =
+        document.getElementById(
+            "committee-home"
+        );
 
+    const view =
+        document.getElementById(
+            "committee-view"
+        );
+
+    const container =
+        document.getElementById(
+            "committee-container"
+        );
+
+
+    // Check required HTML elements
+
+    if (!home) {
+
+        console.error(
+            "ERROR: #committee-home not found."
+        );
+
+        return;
+
+    }
+
+
+    if (!view) {
+
+        console.error(
+            "ERROR: #committee-view not found."
+        );
+
+        return;
+
+    }
+
+
+    if (!container) {
+
+        console.error(
+            "ERROR: #committee-container not found."
+        );
+
+        return;
+
+    }
+
+
+    // ========================================================
+    // IMPORTANT FIX
+    // ========================================================
+    // Always show the Committee Home area when page loads.
+
+    home.style.display = "block";
+
+    view.style.display = "none";
+
+
+    // ========================================================
+    // EXECUTIVE BUTTON
+    // ========================================================
 
     const executiveButton =
         document.querySelector(
             '[data-section="executive"]'
         );
 
+    if (executiveButton) {
+
+        executiveButton.addEventListener(
+            "click",
+            function () {
+
+                showCommittee("executive");
+
+            }
+        );
+
+    }
+
+
+    // ========================================================
+    // COMMITTEE MEMBERS BUTTON
+    // ========================================================
 
     const membersButton =
         document.querySelector(
             '[data-section="members"]'
         );
 
+    if (membersButton) {
+
+        membersButton.addEventListener(
+            "click",
+            function () {
+
+                showCommittee("members");
+
+            }
+        );
+
+    }
+
+
+    // ========================================================
+    // BACK BUTTON
+    // ========================================================
 
     const backButton =
         document.getElementById(
             "committee-back"
         );
-
-
-    // EXECUTIVE BUTTON
-
-    if (executiveButton) {
-
-        executiveButton.addEventListener(
-            "click",
-            () => {
-
-                showCommittee(
-                    "executive"
-                );
-
-            }
-        );
-
-    }
-
-
-    // COMMITTEE MEMBERS BUTTON
-
-    if (membersButton) {
-
-        membersButton.addEventListener(
-            "click",
-            () => {
-
-                showCommittee(
-                    "members"
-                );
-
-            }
-        );
-
-    }
-
-
-    // BACK BUTTON
 
     if (backButton) {
 
@@ -1119,13 +1115,17 @@ function loadCommittee() {
 
     }
 
+
+    console.log(
+        "Biplabi Jubak Sangha Committee loaded successfully."
+    );
+
 }
 
 
 // ============================================================
-// START
+// START JAVASCRIPT
 // ============================================================
-
 
 if (
     document.readyState === "loading"
