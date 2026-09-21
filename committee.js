@@ -280,7 +280,7 @@ const committeeMembers = [
         name: "Dharani Dhar Mohapatra",
         fatherName: "Dhanajaya Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/Dharani Dhar Mohapatra.jpg",
+        photo: "assets/images/Dharani Dhar Mohapatra.jpg",
         registrationNo: "BJS-16508-011",
         bloodGroup: "B-",
         dateOfJoining: "01-01-2023",
@@ -291,7 +291,7 @@ const committeeMembers = [
         name: "Gyanaranjan Mohapatra",
         fatherName: "Hemanta Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/Gyanaranjan Mohapatra.jpg",
+        photo: "assets/images/Gyanaranjan Mohapatra.jpg",
         registrationNo: "BJS-16508-012",
         bloodGroup: "B+",
         dateOfJoining: "01-01-2023",
@@ -302,7 +302,7 @@ const committeeMembers = [
         name: "Ghanasyam Mohapatra",
         fatherName: "Surendra Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/Ghanashyam Mohapatra.jpg",
+        photo: "assets/images/Ghanashyam Mohapatra.jpg",
         registrationNo: "BJS-16508-014",
         bloodGroup: "",
         dateOfJoining: "01-01-2023",
@@ -514,10 +514,8 @@ function createCommitteeSection(title, members) {
         <div class="committee-grid"></div>
     `;
 
-
     const grid =
         section.querySelector(".committee-grid");
-
 
     members.forEach(function (member) {
 
@@ -526,7 +524,6 @@ function createCommitteeSection(title, members) {
         );
 
     });
-
 
     return section;
 }
@@ -542,29 +539,17 @@ function createMemberModal() {
         return;
     }
 
+    const modal = document.createElement("div");
 
-    const modal =
-        document.createElement("div");
-
-
-    modal.id =
-        "memberDetailsModal";
-
-
-    modal.className =
-        "member-modal";
-
+    modal.id = "memberDetailsModal";
+    modal.className = "member-modal";
 
     modal.innerHTML = `
         <div class="member-modal-overlay"></div>
 
-        <div
-            class="member-modal-content"
-            role="dialog"
-            aria-modal="true">
+        <div class="member-modal-content" role="dialog" aria-modal="true">
 
             <!-- CLOSE BUTTON -->
-
             <button
                 type="button"
                 class="member-modal-close"
@@ -573,9 +558,7 @@ function createMemberModal() {
                 &times;
             </button>
 
-
             <!-- LEFT SIDE - PHOTO -->
-
             <div class="modal-member-photo">
 
                 <img
@@ -585,60 +568,32 @@ function createMemberModal() {
 
             </div>
 
-
             <!-- RIGHT SIDE - DETAILS -->
-
             <div class="modal-member-details">
 
                 <!-- DESIGNATION BADGE -->
-
-                <div
-                    class="modal-member-badge"
-                    id="modal-member-badge">
+                <div class="modal-member-badge" id="modal-member-badge">
                     Member
                 </div>
 
-
                 <!-- MEMBER NAME -->
-
                 <h2 id="modal-member-name">
                     Member Name
                 </h2>
 
-
-                <!-- FATHER'S NAME -->
-
-                <div class="modal-detail-row">
-
-                    <div class="modal-detail-label">
-                        Father's Name
-                    </div>
-
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-father">
-                    </div>
-
-                </div>
-
-
-                <!-- MEMBERSHIP REGISTRATION NUMBER -->
-
+                <!-- DETAILS -->
                 <div class="modal-detail-row">
 
                     <div class="modal-detail-label">
                         Membership Registration No.
                     </div>
 
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-registration">
+                    <div class="modal-detail-value"
+                         id="modal-member-registration">
                     </div>
 
                 </div>
 
-
-                <!-- BLOOD GROUP -->
 
                 <div class="modal-detail-row">
 
@@ -646,15 +601,12 @@ function createMemberModal() {
                         Blood Group
                     </div>
 
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-blood">
+                    <div class="modal-detail-value"
+                         id="modal-member-blood">
                     </div>
 
                 </div>
 
-
-                <!-- DATE OF JOINING -->
 
                 <div class="modal-detail-row">
 
@@ -662,15 +614,12 @@ function createMemberModal() {
                         Date of Joining
                     </div>
 
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-date">
+                    <div class="modal-detail-value"
+                         id="modal-member-date">
                     </div>
 
                 </div>
 
-
-                <!-- MEMBERSHIP STATUS -->
 
                 <div class="modal-detail-row">
 
@@ -678,50 +627,23 @@ function createMemberModal() {
                         Membership Status
                     </div>
 
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-status">
+                    <div class="modal-detail-value"
+                         id="modal-member-status">
                     </div>
 
                 </div>
-
-
-                <!-- EXECUTIVE RESPONSIBILITIES
-                     Only appears when responsibilities exist -->
-
-                <div
-                    class="modal-detail-row modal-responsibilities-row"
-                    id="modal-member-responsibilities-row"
-                    style="display: none;">
-
-                    <div class="modal-detail-label">
-                        Responsibilities
-                    </div>
-
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-responsibilities">
-                    </div>
-
-                </div>
-
 
             </div>
 
         </div>
     `;
 
-
     document.body.appendChild(modal);
 
 
     // CLOSE BUTTON
-
     const closeButton =
-        document.getElementById(
-            "member-modal-close"
-        );
-
+        document.getElementById("member-modal-close");
 
     if (closeButton) {
 
@@ -734,12 +656,8 @@ function createMemberModal() {
 
 
     // CLICK OUTSIDE POPUP
-
     const overlay =
-        modal.querySelector(
-            ".member-modal-overlay"
-        );
-
+        modal.querySelector(".member-modal-overlay");
 
     if (overlay) {
 
@@ -760,12 +678,8 @@ function openMemberModal(member) {
 
     createMemberModal();
 
-
     const modal =
-        document.getElementById(
-            "memberDetailsModal"
-        );
-
+        document.getElementById("memberDetailsModal");
 
     if (!modal) {
         return;
@@ -773,69 +687,28 @@ function openMemberModal(member) {
 
 
     const photo =
-        document.getElementById(
-            "modal-member-photo"
-        );
-
+        document.getElementById("modal-member-photo");
 
     const badge =
-        document.getElementById(
-            "modal-member-badge"
-        );
-
+        document.getElementById("modal-member-badge");
 
     const name =
-        document.getElementById(
-            "modal-member-name"
-        );
-
-
-    const father =
-        document.getElementById(
-            "modal-member-father"
-        );
-
+        document.getElementById("modal-member-name");
 
     const registration =
-        document.getElementById(
-            "modal-member-registration"
-        );
-
+        document.getElementById("modal-member-registration");
 
     const blood =
-        document.getElementById(
-            "modal-member-blood"
-        );
-
+        document.getElementById("modal-member-blood");
 
     const date =
-        document.getElementById(
-            "modal-member-date"
-        );
-
+        document.getElementById("modal-member-date");
 
     const status =
-        document.getElementById(
-            "modal-member-status"
-        );
+        document.getElementById("modal-member-status");
 
 
-    const responsibilitiesRow =
-        document.getElementById(
-            "modal-member-responsibilities-row"
-        );
-
-
-    const responsibilities =
-        document.getElementById(
-            "modal-member-responsibilities"
-        );
-
-
-    // ========================================================
     // MEMBER PHOTO
-    // ========================================================
-
     if (photo) {
 
         photo.src =
@@ -844,146 +717,65 @@ function openMemberModal(member) {
         photo.alt =
             member.name || "Member Photo";
 
-
         photo.onerror = function () {
 
             this.onerror = null;
 
             this.src =
                 "assets/images/logo.png";
-
         };
     }
 
 
-    // ========================================================
     // DESIGNATION BADGE
-    // ========================================================
-
     if (badge) {
 
         badge.textContent =
             member.designation || "Member";
-
     }
 
 
-    // ========================================================
     // MEMBER NAME
-    // ========================================================
-
     if (name) {
 
         name.textContent =
             member.name || "Not Updated";
-
     }
 
 
-    // ========================================================
-    // FATHER'S NAME
-    // ========================================================
-
-    if (father) {
-
-        father.textContent =
-            member.fatherName || "Not Updated";
-
-    }
-
-
-    // ========================================================
     // REGISTRATION NUMBER
-    // ========================================================
-
     if (registration) {
 
         registration.textContent =
             member.registrationNo || "Not Updated";
-
     }
 
 
-    // ========================================================
     // BLOOD GROUP
-    // ========================================================
-
     if (blood) {
 
         blood.textContent =
             member.bloodGroup || "Not Updated";
-
     }
 
 
-    // ========================================================
     // DATE OF JOINING
-    // ========================================================
-
     if (date) {
 
         date.textContent =
             member.dateOfJoining || "Not Updated";
-
     }
 
 
-    // ========================================================
     // MEMBERSHIP STATUS
-    // ========================================================
-
     if (status) {
 
         status.textContent =
             member.membershipStatus || "Not Updated";
-
     }
 
 
-    // ========================================================
-    // RESPONSIBILITIES
-    // ONLY EXECUTIVE MEMBERS HAVE THIS FIELD
-    // ========================================================
-
-    if (member.responsibilities) {
-
-        if (responsibilities) {
-
-            responsibilities.textContent =
-                member.responsibilities;
-
-        }
-
-
-        if (responsibilitiesRow) {
-
-            responsibilitiesRow.style.display =
-                "grid";
-
-        }
-
-    } else {
-
-        if (responsibilities) {
-
-            responsibilities.textContent = "";
-
-        }
-
-
-        if (responsibilitiesRow) {
-
-            responsibilitiesRow.style.display =
-                "none";
-
-        }
-    }
-
-
-    // ========================================================
     // SHOW POPUP
-    // ========================================================
-
     modal.classList.add("active");
 
     document.body.classList.add("modal-open");
@@ -997,15 +789,11 @@ function openMemberModal(member) {
 function closeMemberModal() {
 
     const modal =
-        document.getElementById(
-            "memberDetailsModal"
-        );
-
+        document.getElementById("memberDetailsModal");
 
     if (!modal) {
         return;
     }
-
 
     modal.classList.remove("active");
 
@@ -1020,21 +808,13 @@ function closeMemberModal() {
 function showCommittee(type) {
 
     const home =
-        document.getElementById(
-            "committee-home"
-        );
-
+        document.getElementById("committee-home");
 
     const view =
-        document.getElementById(
-            "committee-view"
-        );
-
+        document.getElementById("committee-view");
 
     const container =
-        document.getElementById(
-            "committee-container"
-        );
+        document.getElementById("committee-container");
 
 
     if (!home || !view || !container) {
@@ -1050,10 +830,7 @@ function showCommittee(type) {
     container.innerHTML = "";
 
 
-    // ========================================================
     // EXECUTIVE COMMITTEE
-    // ========================================================
-
     if (type === "executive") {
 
         container.appendChild(
@@ -1062,14 +839,10 @@ function showCommittee(type) {
                 executiveMembers
             )
         );
-
     }
 
 
-    // ========================================================
     // COMMITTEE MEMBERS
-    // ========================================================
-
     if (type === "members") {
 
         container.appendChild(
@@ -1078,26 +851,17 @@ function showCommittee(type) {
                 committeeMembers
             )
         );
-
     }
 
 
-    // HIDE HOME
+    home.style.display = "none";
 
-    home.style.display =
-        "none";
+    // IMPORTANT:
+    // committee.html contains the hidden attribute
+    view.hidden = false;
 
+    view.style.display = "block";
 
-    // SHOW COMMITTEE VIEW
-
-    view.hidden =
-        false;
-
-    view.style.display =
-        "block";
-
-
-    // SCROLL TO TOP
 
     window.scrollTo({
         top: 0,
@@ -1113,33 +877,23 @@ function showCommittee(type) {
 function showCommitteeHome() {
 
     const home =
-        document.getElementById(
-            "committee-home"
-        );
-
+        document.getElementById("committee-home");
 
     const view =
-        document.getElementById(
-            "committee-view"
-        );
+        document.getElementById("committee-view");
 
 
     if (view) {
 
-        view.hidden =
-            true;
+        view.hidden = true;
 
-        view.style.display =
-            "none";
-
+        view.style.display = "none";
     }
 
 
     if (home) {
 
-        home.style.display =
-            "block";
-
+        home.style.display = "block";
     }
 
 
@@ -1157,21 +911,13 @@ function showCommitteeHome() {
 function loadCommittee() {
 
     const home =
-        document.getElementById(
-            "committee-home"
-        );
-
+        document.getElementById("committee-home");
 
     const view =
-        document.getElementById(
-            "committee-view"
-        );
-
+        document.getElementById("committee-view");
 
     const container =
-        document.getElementById(
-            "committee-container"
-        );
+        document.getElementById("committee-container");
 
 
     if (!home) {
@@ -1204,26 +950,15 @@ function loadCommittee() {
     }
 
 
-    // ========================================================
     // INITIAL STATE
-    // ========================================================
+    home.style.display = "block";
 
-    home.style.display =
-        "block";
+    view.hidden = true;
 
-
-    view.hidden =
-        true;
+    view.style.display = "none";
 
 
-    view.style.display =
-        "none";
-
-
-    // ========================================================
     // EXECUTIVE COMMITTEE BUTTON
-    // ========================================================
-
     const executiveButton =
         document.querySelector(
             '[data-section="executive"]'
@@ -1236,20 +971,14 @@ function loadCommittee() {
             "click",
             function () {
 
-                showCommittee(
-                    "executive"
-                );
+                showCommittee("executive");
 
             }
         );
-
     }
 
 
-    // ========================================================
     // COMMITTEE MEMBERS BUTTON
-    // ========================================================
-
     const membersButton =
         document.querySelector(
             '[data-section="members"]'
@@ -1262,24 +991,16 @@ function loadCommittee() {
             "click",
             function () {
 
-                showCommittee(
-                    "members"
-                );
+                showCommittee("members");
 
             }
         );
-
     }
 
 
-    // ========================================================
     // BACK BUTTON
-    // ========================================================
-
     const backButton =
-        document.getElementById(
-            "committee-back"
-        );
+        document.getElementById("committee-back");
 
 
     if (backButton) {
@@ -1288,7 +1009,6 @@ function loadCommittee() {
             "click",
             showCommitteeHome
         );
-
     }
 
 
