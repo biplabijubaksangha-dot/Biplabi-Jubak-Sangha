@@ -482,13 +482,11 @@ const committeeMembers = [
 // ============================================================
 
 function getMemberPhoto(photo) {
-
     if (!photo) {
         return "assets/images/logo.png";
     }
 
     return photo;
-
 }
 
 
@@ -516,13 +514,13 @@ function createMemberCard(member) {
 
             <h3>${member.name}</h3>
 
-            <p class="member-designation">
+            <p class="designation">
                 ${member.designation}
             </p>
 
             <button
                 type="button"
-                class="view-details-btn"
+                class="view-details"
             >
                 View Details
             </button>
@@ -530,8 +528,7 @@ function createMemberCard(member) {
         </div>
     `;
 
-    const button =
-        card.querySelector(".view-details-btn");
+    const button = card.querySelector(".view-details");
 
     if (button) {
         button.addEventListener("click", function () {
@@ -549,11 +546,10 @@ function createMemberCard(member) {
 
 function createCommitteeSection(title, members) {
 
-    const section =
-        document.createElement("section");
+    const section = document.createElement("section");
 
-    section.className =
-        "committee-members-section";
+    // Match existing CSS
+    section.className = "committee-member-section";
 
     section.innerHTML = `
         <div class="committee-section-heading">
@@ -566,11 +562,10 @@ function createCommitteeSection(title, members) {
 
         </div>
 
-        <div class="members-grid"></div>
+        <div class="committee-grid"></div>
     `;
 
-    const grid =
-        section.querySelector(".members-grid");
+    const grid = section.querySelector(".committee-grid");
 
     members.forEach(function (member) {
 
@@ -590,22 +585,15 @@ function createCommitteeSection(title, members) {
 
 function createMemberModal() {
 
-    if (
-        document.getElementById(
-            "memberDetailsModal"
-        )
-    ) {
+    if (document.getElementById("memberDetailsModal")) {
         return;
     }
 
-    const modal =
-        document.createElement("div");
+    const modal = document.createElement("div");
 
-    modal.id =
-        "memberDetailsModal";
+    modal.id = "memberDetailsModal";
 
-    modal.className =
-        "member-modal";
+    modal.className = "member-modal";
 
     modal.innerHTML = `
         <div class="member-modal-overlay"></div>
@@ -625,59 +613,97 @@ function createMemberModal() {
                 &times;
             </button>
 
-            <div class="modal-member-photo">
+            <div class="member-modal-body">
 
-                <img
-                    id="modal-member-photo"
-                    src="assets/images/logo.png"
-                    alt="Member Photo"
-                >
+                <div class="modal-member-photo">
 
-            </div>
+                    <img
+                        id="modal-member-photo"
+                        src="assets/images/logo.png"
+                        alt="Member Photo"
+                    >
 
-            <div class="modal-member-details">
+                </div>
 
-                <h2 id="modal-member-name">
-                    Member Name
-                </h2>
+                <div class="modal-member-details">
 
-                <p>
-                    <strong>Designation:</strong>
-                    <span id="modal-member-designation"></span>
-                </p>
+                    <h2 id="modal-member-name">
+                        Member Name
+                    </h2>
 
-                <p>
-                    <strong>Father's Name:</strong>
-                    <span id="modal-member-father"></span>
-                </p>
+                    <div class="member-detail-list">
 
-                <p>
-                    <strong>Membership Registration No.:</strong>
-                    <span id="modal-member-registration"></span>
-                </p>
+                        <div class="member-detail-item">
+                            <span class="detail-label">
+                                Designation
+                            </span>
+                            <span
+                                class="detail-value"
+                                id="modal-member-designation"
+                            ></span>
+                        </div>
 
-                <p>
-                    <strong>Blood Group:</strong>
-                    <span id="modal-member-blood"></span>
-                </p>
+                        <div class="member-detail-item">
+                            <span class="detail-label">
+                                Father's Name
+                            </span>
+                            <span
+                                class="detail-value"
+                                id="modal-member-father"
+                            ></span>
+                        </div>
 
-                <p>
-                    <strong>Date of Joining:</strong>
-                    <span id="modal-member-date"></span>
-                </p>
+                        <div class="member-detail-item">
+                            <span class="detail-label">
+                                Membership Registration No.
+                            </span>
+                            <span
+                                class="detail-value"
+                                id="modal-member-registration"
+                            ></span>
+                        </div>
 
-                <p>
-                    <strong>Membership Status:</strong>
-                    <span id="modal-member-status"></span>
-                </p>
+                        <div class="member-detail-item">
+                            <span class="detail-label">
+                                Blood Group
+                            </span>
+                            <span
+                                class="detail-value"
+                                id="modal-member-blood"
+                            ></span>
+                        </div>
 
-                <div class="modal-responsibilities">
+                        <div class="member-detail-item">
+                            <span class="detail-label">
+                                Date of Joining
+                            </span>
+                            <span
+                                class="detail-value"
+                                id="modal-member-date"
+                            ></span>
+                        </div>
 
-                    <strong>
-                        Responsibilities:
-                    </strong>
+                        <div class="member-detail-item">
+                            <span class="detail-label">
+                                Membership Status
+                            </span>
+                            <span
+                                class="detail-value"
+                                id="modal-member-status"
+                            ></span>
+                        </div>
 
-                    <p id="modal-member-responsibilities"></p>
+                    </div>
+
+                    <div class="modal-responsibilities">
+
+                        <strong>
+                            Responsibilities:
+                        </strong>
+
+                        <p id="modal-member-responsibilities"></p>
+
+                    </div>
 
                 </div>
 
@@ -689,31 +715,23 @@ function createMemberModal() {
     document.body.appendChild(modal);
 
     const closeButton =
-        document.getElementById(
-            "member-modal-close"
-        );
+        document.getElementById("member-modal-close");
 
     const overlay =
-        modal.querySelector(
-            ".member-modal-overlay"
-        );
+        modal.querySelector(".member-modal-overlay");
 
     if (closeButton) {
-
         closeButton.addEventListener(
             "click",
             closeMemberModal
         );
-
     }
 
     if (overlay) {
-
         overlay.addEventListener(
             "click",
             closeMemberModal
         );
-
     }
 }
 
@@ -727,58 +745,38 @@ function openMemberModal(member) {
     createMemberModal();
 
     const modal =
-        document.getElementById(
-            "memberDetailsModal"
-        );
+        document.getElementById("memberDetailsModal");
 
     if (!modal) {
         return;
     }
 
     const photo =
-        document.getElementById(
-            "modal-member-photo"
-        );
+        document.getElementById("modal-member-photo");
 
     const name =
-        document.getElementById(
-            "modal-member-name"
-        );
+        document.getElementById("modal-member-name");
 
     const designation =
-        document.getElementById(
-            "modal-member-designation"
-        );
+        document.getElementById("modal-member-designation");
 
     const father =
-        document.getElementById(
-            "modal-member-father"
-        );
+        document.getElementById("modal-member-father");
 
     const registration =
-        document.getElementById(
-            "modal-member-registration"
-        );
+        document.getElementById("modal-member-registration");
 
     const blood =
-        document.getElementById(
-            "modal-member-blood"
-        );
+        document.getElementById("modal-member-blood");
 
     const date =
-        document.getElementById(
-            "modal-member-date"
-        );
+        document.getElementById("modal-member-date");
 
     const status =
-        document.getElementById(
-            "modal-member-status"
-        );
+        document.getElementById("modal-member-status");
 
     const responsibilities =
-        document.getElementById(
-            "modal-member-responsibilities"
-        );
+        document.getElementById("modal-member-responsibilities");
 
 
     if (photo) {
@@ -789,15 +787,14 @@ function openMemberModal(member) {
         photo.alt =
             member.name;
 
-        photo.onerror =
-            function () {
+        photo.onerror = function () {
 
-                this.onerror = null;
+            this.onerror = null;
 
-                this.src =
-                    "assets/images/logo.png";
+            this.src =
+                "assets/images/logo.png";
 
-            };
+        };
 
     }
 
@@ -843,11 +840,12 @@ function openMemberModal(member) {
     }
 
 
-    modal.classList.add("show");
+    // IMPORTANT:
+    // CSS uses .active, not .show
 
-    document.body.classList.add(
-        "member-modal-open"
-    );
+    modal.classList.add("active");
+
+    document.body.classList.add("modal-open");
 }
 
 
@@ -858,19 +856,15 @@ function openMemberModal(member) {
 function closeMemberModal() {
 
     const modal =
-        document.getElementById(
-            "memberDetailsModal"
-        );
+        document.getElementById("memberDetailsModal");
 
     if (!modal) {
         return;
     }
 
-    modal.classList.remove("show");
+    modal.classList.remove("active");
 
-    document.body.classList.remove(
-        "member-modal-open"
-    );
+    document.body.classList.remove("modal-open");
 }
 
 
@@ -881,19 +875,13 @@ function closeMemberModal() {
 function showCommittee(type) {
 
     const home =
-        document.getElementById(
-            "committee-home"
-        );
+        document.getElementById("committee-home");
 
     const view =
-        document.getElementById(
-            "committee-view"
-        );
+        document.getElementById("committee-view");
 
     const container =
-        document.getElementById(
-            "committee-container"
-        );
+        document.getElementById("committee-container");
 
     if (!home || !view || !container) {
 
@@ -934,6 +922,11 @@ function showCommittee(type) {
 
     home.style.display = "none";
 
+    // IMPORTANT:
+    // Remove the HTML hidden attribute
+
+    view.hidden = false;
+
     view.style.display = "block";
 
 
@@ -951,26 +944,22 @@ function showCommittee(type) {
 function showCommitteeHome() {
 
     const home =
-        document.getElementById(
-            "committee-home"
-        );
+        document.getElementById("committee-home");
 
     const view =
-        document.getElementById(
-            "committee-view"
-        );
+        document.getElementById("committee-view");
 
 
     if (view) {
+
+        view.hidden = true;
+
         view.style.display = "none";
+
     }
 
 
     if (home) {
-
-        // IMPORTANT:
-        // Make sure the two Committee buttons
-        // are visible when the page loads.
 
         home.style.display = "block";
 
@@ -991,22 +980,14 @@ function showCommitteeHome() {
 function loadCommittee() {
 
     const home =
-        document.getElementById(
-            "committee-home"
-        );
+        document.getElementById("committee-home");
 
     const view =
-        document.getElementById(
-            "committee-view"
-        );
+        document.getElementById("committee-view");
 
     const container =
-        document.getElementById(
-            "committee-container"
-        );
+        document.getElementById("committee-container");
 
-
-    // Check required HTML elements
 
     if (!home) {
 
@@ -1038,12 +1019,11 @@ function loadCommittee() {
     }
 
 
-    // ========================================================
-    // IMPORTANT FIX
-    // ========================================================
-    // Always show the Committee Home area when page loads.
+    // Show home when page loads
 
     home.style.display = "block";
+
+    view.hidden = true;
 
     view.style.display = "none";
 
@@ -1124,9 +1104,7 @@ function loadCommittee() {
 // START JAVASCRIPT
 // ============================================================
 
-if (
-    document.readyState === "loading"
-) {
+if (document.readyState === "loading") {
 
     document.addEventListener(
         "DOMContentLoaded",
