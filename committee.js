@@ -192,7 +192,7 @@ const committeeMembers = [
         name: "Ananda Kumar Mohapatra",
         fatherName: "Narendra Mohapatra",
         designation: "Member",
-        photo: "assets/images/members/Ananda Mohapatra.jpg",
+        photo: "assets/images/members/Ananda Kumar Mohapatra.jpg",
         registrationNo: "BJS-16508-001",
         bloodGroup: "B-",
         dateOfJoining: "01-01-2023",
@@ -1015,7 +1015,6 @@ function loadCommittee() {
         );
 
         return;
-
     }
 
 
@@ -1026,7 +1025,6 @@ function loadCommittee() {
         );
 
         return;
-
     }
 
 
@@ -1037,7 +1035,6 @@ function loadCommittee() {
         );
 
         return;
-
     }
 
 
