@@ -1,11 +1,15 @@
-javascript
+
+
+
 // ============================================================
 // BIPLABI JUBAK SANGHA
 // COMMITTEE MEMBERS JAVASCRIPT
 // ============================================================
+
 // ============================================================
 // EXECUTIVE COMMITTEE
 // ============================================================
+
 const executiveMembers = [
     {
         name: "Rakesh Kumar Mohapatra",
@@ -59,7 +63,7 @@ const executiveMembers = [
         name: "Soumya Ranjan Das",
         fatherName: "Akshaya Kumar Das",
         designation: "Board Member",
-        photo: "assets/images/members/member1.jpg",
+        photo: "assets/images/members/member5.jpg",
         registrationNo: "BJS-16508-028",
         bloodGroup: "B+",
         dateOfJoining: "01-01-2023",
@@ -71,7 +75,7 @@ const executiveMembers = [
         name: "Indrajeet Mohapatra",
         fatherName: "Bijaya Mohapatra",
         designation: "Board Member",
-        photo: "assets/images/members/member2.jpg",
+        photo: "assets/images/members/member8.jpg",
         registrationNo: "BJS-16508-016",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
@@ -83,7 +87,7 @@ const executiveMembers = [
         name: "Rahul Nayak",
         fatherName: "Adhikari Nayak",
         designation: "Board Member",
-        photo: "assets/images/members/member3.jpg",
+        photo: "assets/images/members/member2.jpg",
         registrationNo: "BJS-16508-020",
         bloodGroup: "A+",
         dateOfJoining: "01-01-2023",
@@ -107,7 +111,7 @@ const executiveMembers = [
         name: "Gyan Ranjan Biswal",
         fatherName: "Nabin Biswal",
         designation: "Board Member",
-        photo: "assets/images/members/member5.jpg",
+        photo: "assets/images/members/member3.jpg",
         registrationNo: "BJS-16508-013",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
@@ -119,7 +123,7 @@ const executiveMembers = [
         name: "Biren Kumar Mohapatra",
         fatherName: "Bidyadhar Mohapatra",
         designation: "Board Member",
-        photo: "assets/images/members/member6.jpg",
+        photo: "assets/images/members/member1.jpg",
         registrationNo: "BJS-16508-005",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
@@ -131,7 +135,7 @@ const executiveMembers = [
         name: "Subash Kumar Mohapatra",
         fatherName: "Manoj Mohapatra",
         designation: "Board Member",
-        photo: "assets/images/members/member7.jpg",
+        photo: "assets/images/members/member6.jpg",
         registrationNo: "BJS-16508-030",
         bloodGroup: "A-",
         dateOfJoining: "01-01-2023",
@@ -143,7 +147,7 @@ const executiveMembers = [
         name: "Santosh Kumar Swain",
         fatherName: "Maguni Swain",
         designation: "Board Member",
-        photo: "assets/images/members/member8.jpg",
+        photo: "assets/images/members/member7.jpg",
         registrationNo: "BJS-16508-027",
         bloodGroup: "O+",
         dateOfJoining: "01-01-2023",
