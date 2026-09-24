@@ -1,398 +1,434 @@
-
-
-
 // ============================================================
 // BIPLABI JUBAK SANGHA
 // COMMITTEE MEMBERS JAVASCRIPT
 // ============================================================
+
 
 // ============================================================
 // EXECUTIVE COMMITTEE
 // ============================================================
 
 const executiveMembers = [
-    {
-        name: "Rakesh Kumar Mohapatra",
-        fatherName: "Upendra Mohapatra",
-        designation: "President",
-        photo: "assets/images/members/president.jpg",
-        registrationNo: "BJS-16508-021",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Provides overall leadership, guidance and coordination for the organisation and its activities."
-    },
-    {
-        name: "Bidur Prava Mohapatra",
-        fatherName: "Bichitrananda Mohapatra",
-        designation: "Vice President",
-        photo: "assets/images/members/vice-president.jpg",
-        registrationNo: "BJS-16508-004",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports the President and assists in coordinating organisational activities and programmes."
-    },
-    {
-        name: "Mrutyunjaya Muduli",
-        fatherName: "Bimbadhar Muduli",
-        designation: "Secretary",
-        photo: "assets/images/members/secretary.jpg",
-        registrationNo: "BJS-16508-019",
-        bloodGroup: "B+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Manages official records, correspondence, meetings and administrative coordination of the organisation."
-    },
-    {
-        name: "Rakesh Kumar Swain",
-        fatherName: "Akshaya Swain",
-        designation: "Treasurer",
-        photo: "assets/images/members/treasurer.jpg",
-        registrationNo: "BJS-16508-022",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Maintains financial records, accounts and financial transactions of the organisation."
-    },
-    {
-        name: "Soumya Ranjan Das",
-        fatherName: "Akshaya Kumar Das",
-        designation: "Board Member",
-        photo: "assets/images/members/member5.jpg",
-        registrationNo: "BJS-16508-028",
-        bloodGroup: "B+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in organisational decisions and supports community development activities."
-    },
-    {
-        name: "Indrajeet Mohapatra",
-        fatherName: "Bijaya Mohapatra",
-        designation: "Board Member",
-        photo: "assets/images/members/member8.jpg",
-        registrationNo: "BJS-16508-016",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports planning, coordination and implementation of club programmes and activities."
-    },
-    {
-        name: "Rahul Nayak",
-        fatherName: "Adhikari Nayak",
-        designation: "Board Member",
-        photo: "assets/images/members/member2.jpg",
-        registrationNo: "BJS-16508-020",
-        bloodGroup: "A+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Contributes to organisational planning and community service initiatives."
-    },
-    {
-        name: "Sourabha Muduli",
-        fatherName: "Santosh Kumar Muduli",
-        designation: "Board Member",
-        photo: "assets/images/members/member4.jpg",
-        registrationNo: "BJS-16508-029",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Supports club programmes, activities and community development initiatives."
-    },
-    {
-        name: "Gyan Ranjan Biswal",
-        fatherName: "Nabin Biswal",
-        designation: "Board Member",
-        photo: "assets/images/members/member3.jpg",
-        registrationNo: "BJS-16508-013",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in committee decisions, organisational programmes and community development activities."
-    },
-    {
-        name: "Biren Kumar Mohapatra",
-        fatherName: "Bidyadhar Mohapatra",
-        designation: "Board Member",
-        photo: "assets/images/members/member1.jpg",
-        registrationNo: "BJS-16508-005",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in committee decisions, organisational programmes and community development activities."
-    },
-    {
-        name: "Subash Kumar Mohapatra",
-        fatherName: "Manoj Mohapatra",
-        designation: "Board Member",
-        photo: "assets/images/members/member6.jpg",
-        registrationNo: "BJS-16508-030",
-        bloodGroup: "A-",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in committee decisions, organisational programmes and community development activities."
-    },
-    {
-        name: "Santosh Kumar Swain",
-        fatherName: "Maguni Swain",
-        designation: "Board Member",
-        photo: "assets/images/members/member7.jpg",
-        registrationNo: "BJS-16508-027",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in committee decisions, organisational programmes and community development activities."
-    },
-    {
-        name: "Manoranjan Nayak",
-        fatherName: "Baburam Nayak",
-        designation: "Board Member",
-        photo: "assets/images/members/member9.jpg",
-        registrationNo: "BJS-16508-018",
-        bloodGroup: "B+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active",
-        responsibilities:
-            "Participates in committee decisions, organisational programmes and community development activities."
-    }
+    {
+        name: "Rakesh Kumar Mohapatra",
+        fatherName: "Upendra Mohapatra",
+        designation: "President",
+        photo: "assets/images/members/president.jpg",
+        registrationNo: "BJS-16508-021",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Provides overall leadership, guidance and coordination for the organisation and its activities."
+    },
+
+    {
+        name: "Bidur Prava Mohapatra",
+        fatherName: "Bichitrananda Mohapatra",
+        designation: "Vice President",
+        photo: "assets/images/members/vice-president.jpg",
+        registrationNo: "BJS-16508-004",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Supports the President and assists in coordinating organisational activities and programmes."
+    },
+
+    {
+        name: "Mrutyunjaya Muduli",
+        fatherName: "Bimbadhar Muduli",
+        designation: "Secretary",
+        photo: "assets/images/members/secretary.jpg",
+        registrationNo: "BJS-16508-019",
+        bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Manages official records, correspondence, meetings and administrative coordination of the organisation."
+    },
+
+    {
+        name: "Rakesh Kumar Swain",
+        fatherName: "Akshaya Swain",
+        designation: "Treasurer",
+        photo: "assets/images/members/treasurer.jpg",
+        registrationNo: "BJS-16508-022",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Maintains financial records, accounts and financial transactions of the organisation."
+    },
+
+    {
+        name: "Soumya Ranjan Das",
+        fatherName: "Akshaya Kumar Das",
+        designation: "Board Member",
+        photo: "assets/images/members/member5.jpg",
+        registrationNo: "BJS-16508-028",
+        bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Participates in organisational decisions and supports community development activities."
+    },
+
+    {
+        name: "Indrajeet Mohapatra",
+        fatherName: "Bijaya Mohapatra",
+        designation: "Board Member",
+        photo: "assets/images/members/member8.jpg",
+        registrationNo: "BJS-16508-016",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Supports planning, coordination and implementation of club programmes and activities."
+    },
+
+    {
+        name: "Rahul Nayak",
+        fatherName: "Adhikari Nayak",
+        designation: "Board Member",
+        photo: "assets/images/members/member2.jpg",
+        registrationNo: "BJS-16508-020",
+        bloodGroup: "A+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Contributes to organisational planning and community service initiatives."
+    },
+
+    {
+        name: "Sourabha Muduli",
+        fatherName: "Santosh Kumar Muduli",
+        designation: "Board Member",
+        photo: "assets/images/members/member4.jpg",
+        registrationNo: "BJS-16508-029",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Supports club programmes, activities and community development initiatives."
+    },
+
+    {
+        name: "Gyan Ranjan Biswal",
+        fatherName: "Nabin Biswal",
+        designation: "Board Member",
+        photo: "assets/images/members/member3.jpg",
+        registrationNo: "BJS-16508-013",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Participates in committee decisions, organisational programmes and community development activities."
+    },
+
+    {
+        name: "Biren Kumar Mohapatra",
+        fatherName: "Bidyadhar Mohapatra",
+        designation: "Board Member",
+        photo: "assets/images/members/member1.jpg",
+        registrationNo: "BJS-16508-005",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Participates in committee decisions, organisational programmes and community development activities."
+    },
+
+    {
+        name: "Subash Kumar Mohapatra",
+        fatherName: "Manoj Mohapatra",
+        designation: "Board Member",
+        photo: "assets/images/members/member6.jpg",
+        registrationNo: "BJS-16508-030",
+        bloodGroup: "A-",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Participates in committee decisions, organisational programmes and community development activities."
+    },
+
+    {
+        name: "Santosh Kumar Swain",
+        fatherName: "Maguni Swain",
+        designation: "Board Member",
+        photo: "assets/images/members/member7.jpg",
+        registrationNo: "BJS-16508-027",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Participates in committee decisions, organisational programmes and community development activities."
+    },
+
+    {
+        name: "Manoranjan Nayak",
+        fatherName: "Baburam Nayak",
+        designation: "Board Member",
+        photo: "assets/images/members/member9.jpg",
+        registrationNo: "BJS-16508-018",
+        bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active",
+        responsibilities:
+            "Participates in committee decisions, organisational programmes and community development activities."
+    }
 ];
+
+
 // ============================================================
 // COMMITTEE MEMBERS
 // ============================================================
+
 const committeeMembers = [
-    {
-        name: "Ananda Kumar Mohapatra",
-        fatherName: "Narendra Mohapatra",
-        designation: "Member",
-        photo: "assets/images/members/Ananda Kumar Mohapatra.jpg",
-        registrationNo: "BJS-16508-001",
-        bloodGroup: "B-",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Angad Kumar Mohapatra",
-        fatherName: "Hrudananda Mohapatra",
-        designation: "Member",
-        photo: "assets/images/members/Angad Kumar Mohapatra.jpg",
-        registrationNo: "BJS-16508-002",
-        bloodGroup: "B+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Balaram Barik",
-        fatherName: "Shukadeba Barik",
-        designation: "Member",
-        photo: "assets/images/members/Balaram Barik.jpg",
-        registrationNo: "BJS-16508-003",
-        bloodGroup: "A-",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Biswajeet Mohapatra",
-        fatherName: "Babaji Mohapatra",
-        designation: "Member",
-        photo: "assets/images/members/Biswajit Mohapatra.jpg",
-        registrationNo: "BJS-16508-006",
-        bloodGroup: "AB+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Biswaranjan Swain",
-        fatherName: "Purnachandra Swain",
-        designation: "Member",
-        photo: "assets/images/members/Biswaranjan Swain.jpg",
-        registrationNo: "BJS-16508-007",
-        bloodGroup: "A+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Chinmaya Mohapatra",
-        fatherName: "Adikanda Mohapatra",
-        designation: "Member",
-        photo: "assets/images/members/Chinmaya Mohapatra.jpg",
-        registrationNo: "BJS-16508-008",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Deepak Mohapatra",
-        fatherName: "Sriram Mohahaptra",
-        designation: "Member",
-        photo: "assets/images/members/Dipak Mohapatra.jpg",
-        registrationNo: "BJS-16508-009",
-        bloodGroup: "",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Deepti Ranjan Muduli",
-        fatherName: "Babaji Ch. Muduli",
-        designation: "Member",
-        photo: "assets/images/logo.png",
-        registrationNo: "BJS-16508-010",
-        bloodGroup: "",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Dharani Dhar Mohapatra",
-        fatherName: "Dhanajaya Mohapatra",
-        designation: "Member",
-        photo: "assets/images/Dharani Dhar Mohapatra.jpg",
-        registrationNo: "BJS-16508-011",
-        bloodGroup: "B-",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Gyanaranjan Mohapatra",
-        fatherName: "Hemanta Mohapatra",
-        designation: "Member",
-        photo: "assets/images/Gyanaranjan Mohapatra.jpg",
-        registrationNo: "BJS-16508-012",
-        bloodGroup: "B+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Ghanasyam Mohapatra",
-        fatherName: "Surendra Mohapatra",
-        designation: "Member",
-        photo: "assets/images/Ghanashyam Mohapatra.jpg",
-        registrationNo: "BJS-16508-014",
-        bloodGroup: "",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Hiranya Barik",
-        fatherName: "Babaji barik",
-        designation: "Member",
-        photo: "assets/images/members/Hiranya Barik.jpg",
-        registrationNo: "BJS-16508-015",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Jamesh Mohapatra",
-        fatherName: "Aditya Mohapatra",
-        designation: "Member",
-        photo: "assets/images/members/Jamesh Mohapatra.jpg",
-        registrationNo: "BJS-16508-017",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Sagar Kumar Muduli",
-        fatherName: "Basanta Kumar Muduli",
-        designation: "Member",
-        photo: "assets/images/members/Sagar Kumar Muduli.jpg",
-        registrationNo: "BJS-16508-023",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Sagar Swain",
-        fatherName: "Nursingh Swain",
-        designation: "Member",
-        photo: "assets/images/members/Sagar Swain.jpg",
-        registrationNo: "BJS-16508-024",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Samir Kumar Muduli",
-        fatherName: "Bijaya kumar Muduli",
-        designation: "Member",
-        photo: "assets/images/members/Samir Muduli.jpg",
-        registrationNo: "BJS-16508-025",
-        bloodGroup: "B+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Krushna Chandra Muduli",
-        fatherName: "Minaketan Muduli",
-        designation: "Member",
-        photo: "assets/images/members/Krushna Chandra Muduli.jpg",
-        registrationNo: "BJS-16508-026",
-        bloodGroup: "A+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Subash Kumar Swain",
-        fatherName: "Maguni Swain",
-        designation: "Member",
-        photo: "assets/images/members/Subash Kumar Swain.jpg",
-        registrationNo: "BJS-16508-031",
-        bloodGroup: "O+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Sushil Mallick",
-        fatherName: "Srikanth mallick",
-        designation: "Member",
-        photo: "assets/images/members/Sushil Mallick.jpg",
-        registrationNo: "BJS-16508-032",
-        bloodGroup: "B+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Tanmaya Kumar Swain",
-        fatherName: "Bishnu Ch. swain",
-        designation: "Member",
-        photo: "assets/images/members/Tanmaya Swain.jpg",
-        registrationNo: "BJS-16508-033",
-        bloodGroup: "A+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Udip Kumar Muduli",
-        fatherName: "Gayadhar Muduli",
-        designation: "Member",
-        photo: "assets/images/logo.png",
-        registrationNo: "BJS-16508-034",
-        bloodGroup: "",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    },
-    {
-        name: "Umesh Mohapatra",
-        fatherName: "Dolagobinda Muduli",
-        designation: "Member",
-        photo: "assets/images/members/Umesh Mohapatra.jpg",
-        registrationNo: "BJS-16508-035",
-        bloodGroup: "A+",
-        dateOfJoining: "01-01-2023",
-        membershipStatus: "Active"
-    }
+    {
+        name: "Ananda Kumar Mohapatra",
+        fatherName: "Narendra Mohapatra",
+        designation: "Member",
+        photo: "assets/images/members/Ananda Kumar Mohapatra.jpg",
+        registrationNo: "BJS-16508-001",
+        bloodGroup: "B-",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Angad Kumar Mohapatra",
+        fatherName: "Hrudananda Mohapatra",
+        designation: "Member",
+        photo: "assets/images/members/Angad Kumar Mohapatra.jpg",
+        registrationNo: "BJS-16508-002",
+        bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Balaram Barik",
+        fatherName: "Shukadeba Barik",
+        designation: "Member",
+        photo: "assets/images/members/Balaram Barik.jpg",
+        registrationNo: "BJS-16508-003",
+        bloodGroup: "A-",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Biswajeet Mohapatra",
+        fatherName: "Babaji Mohapatra",
+        designation: "Member",
+        photo: "assets/images/members/Biswajit Mohapatra.jpg",
+        registrationNo: "BJS-16508-006",
+        bloodGroup: "AB+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Biswaranjan Swain",
+        fatherName: "Purnachandra Swain",
+        designation: "Member",
+        photo: "assets/images/members/Biswaranjan Swain.jpg",
+        registrationNo: "BJS-16508-007",
+        bloodGroup: "A+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Chinmaya Mohapatra",
+        fatherName: "Adikanda Mohapatra",
+        designation: "Member",
+        photo: "assets/images/members/Chinmaya Mohapatra.jpg",
+        registrationNo: "BJS-16508-008",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Deepak Mohapatra",
+        fatherName: "Sriram Mohahaptra",
+        designation: "Member",
+        photo: "assets/images/members/Dipak Mohapatra.jpg",
+        registrationNo: "BJS-16508-009",
+        bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Deepti Ranjan Muduli",
+        fatherName: "Babaji Ch. Muduli",
+        designation: "Member",
+        photo: "assets/images/logo.png",
+        registrationNo: "BJS-16508-010",
+        bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Dharani Dhar Mohapatra",
+        fatherName: "Dhanajaya Mohapatra",
+        designation: "Member",
+        photo: "assets/images/Dharani Dhar Mohapatra.jpg",
+        registrationNo: "BJS-16508-011",
+        bloodGroup: "B-",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Gyanaranjan Mohapatra",
+        fatherName: "Hemanta Mohapatra",
+        designation: "Member",
+        photo: "assets/images/Gyanaranjan Mohapatra.jpg",
+        registrationNo: "BJS-16508-012",
+        bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Ghanasyam Mohapatra",
+        fatherName: "Surendra Mohapatra",
+        designation: "Member",
+        photo: "assets/images/Ghanashyam Mohapatra.jpg",
+        registrationNo: "BJS-16508-014",
+        bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Hiranya Barik",
+        fatherName: "Babaji barik",
+        designation: "Member",
+        photo: "assets/images/members/Hiranya Barik.jpg",
+        registrationNo: "BJS-16508-015",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Jamesh Mohapatra",
+        fatherName: "Aditya Mohapatra",
+        designation: "Member",
+        photo: "assets/images/members/Jamesh Mohapatra.jpg",
+        registrationNo: "BJS-16508-017",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Sagar Kumar Muduli",
+        fatherName: "Basanta Kumar Muduli",
+        designation: "Member",
+        photo: "assets/images/members/Sagar Kumar Muduli.jpg",
+        registrationNo: "BJS-16508-023",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Sagar Swain",
+        fatherName: "Nursingh Swain",
+        designation: "Member",
+        photo: "assets/images/members/Sagar Swain.jpg",
+        registrationNo: "BJS-16508-024",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Samir Kumar Muduli",
+        fatherName: "Bijaya kumar Muduli",
+        designation: "Member",
+        photo: "assets/images/members/Samir Muduli.jpg",
+        registrationNo: "BJS-16508-025",
+        bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Krushna Chandra Muduli",
+        fatherName: "Minaketan Muduli",
+        designation: "Member",
+        photo: "assets/images/members/Krushna Chandra Muduli.jpg",
+        registrationNo: "BJS-16508-026",
+        bloodGroup: "A+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Subash Kumar Swain",
+        fatherName: "Maguni Swain",
+        designation: "Member",
+        photo: "assets/images/members/Subash Kumar Swain.jpg",
+        registrationNo: "BJS-16508-031",
+        bloodGroup: "O+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Sushil Mallick",
+        fatherName: "Srikanth mallick",
+        designation: "Member",
+        photo: "assets/images/members/Sushil Mallick.jpg",
+        registrationNo: "BJS-16508-032",
+        bloodGroup: "B+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Tanmaya Kumar Swain",
+        fatherName: "Bishnu Ch. swain",
+        designation: "Member",
+        photo: "assets/images/members/Tanmaya Swain.jpg",
+        registrationNo: "BJS-16508-033",
+        bloodGroup: "A+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Udip Kumar Muduli",
+        fatherName: "Gayadhar Muduli",
+        designation: "Member",
+        photo: "assets/images/logo.png",
+        registrationNo: "BJS-16508-034",
+        bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
+        name: "Umesh Mohapatra",
+        fatherName: "Dolagobinda Muduli",
+        designation: "Member",
+        photo: "assets/images/members/Umesh Mohapatra.jpg",
+        registrationNo: "BJS-16508-035",
+        bloodGroup: "A+",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    }
 ];
+
+
 // ============================================================
 // PHOTO PATH
 // ============================================================
@@ -416,34 +452,112 @@ function createMemberCard(member) {
     const card = document.createElement("div");
 
     card.className = "member-card";
+    card.setAttribute("tabindex", "0");
 
     card.innerHTML = `
         <div class="member-photo">
 
             <img
                 src="${getMemberPhoto(member.photo)}"
-                alt="${member.name}"
+                alt="${member.name || "Committee Member"}"
                 loading="lazy"
-                onerror="this.onerror=null;this.src='assets/images/logo.png';">
+                onerror="this.onerror=null;this.src='assets/images/logo.png';"
+            >
 
         </div>
 
         <div class="member-info">
 
-            <h3>${member.name}</h3>
+            <h3>
+                ${member.name || "Member Name"}
+            </h3>
 
             <p class="designation">
                 ${member.designation || "Member"}
             </p>
 
+            <div class="member-card-details">
+
+                ${
+                    member.fatherName
+                        ? `
+                        <div class="member-card-detail">
+                            <span>Father's Name</span>
+                            <strong>${member.fatherName}</strong>
+                        </div>
+                        `
+                        : ""
+                }
+
+                ${
+                    member.registrationNo
+                        ? `
+                        <div class="member-card-detail">
+                            <span>Registration No.</span>
+                            <strong>${member.registrationNo}</strong>
+                        </div>
+                        `
+                        : ""
+                }
+
+                ${
+                    member.bloodGroup
+                        ? `
+                        <div class="member-card-detail">
+                            <span>Blood Group</span>
+                            <strong>${member.bloodGroup}</strong>
+                        </div>
+                        `
+                        : ""
+                }
+
+                ${
+                    member.dateOfJoining
+                        ? `
+                        <div class="member-card-detail">
+                            <span>Date of Joining</span>
+                            <strong>${member.dateOfJoining}</strong>
+                        </div>
+                        `
+                        : ""
+                }
+
+                ${
+                    member.membershipStatus
+                        ? `
+                        <div class="member-card-detail">
+                            <span>Status</span>
+                            <strong class="status-active">
+                                ${member.membershipStatus}
+                            </strong>
+                        </div>
+                        `
+                        : ""
+                }
+
+            </div>
+
         </div>
     `;
 
 
-    // CLICK MEMBER CARD
-    card.addEventListener("click", function () {
+    // Open complete member details when card is clicked
 
+    card.addEventListener("click", function () {
         openMemberModal(member);
+    });
+
+
+    // Keyboard accessibility
+
+    card.addEventListener("keydown", function (event) {
+
+        if (event.key === "Enter" || event.key === " ") {
+
+            event.preventDefault();
+
+            openMemberModal(member);
+        }
 
     });
 
@@ -475,8 +589,7 @@ function createCommitteeSection(title, members) {
     `;
 
 
-    const grid =
-        section.querySelector(".committee-grid");
+    const grid = section.querySelector(".committee-grid");
 
 
     members.forEach(function (member) {
@@ -564,6 +677,20 @@ function createMemberModal() {
                 <div class="modal-detail-row">
 
                     <div class="modal-detail-label">
+                        Father's Name
+                    </div>
+
+                    <div
+                        class="modal-detail-value"
+                        id="modal-member-father"
+                    ></div>
+
+                </div>
+
+
+                <div class="modal-detail-row">
+
+                    <div class="modal-detail-label">
                         Membership Registration No.
                     </div>
 
@@ -616,6 +743,23 @@ function createMemberModal() {
 
                 </div>
 
+
+                <div
+                    class="modal-detail-row modal-responsibility-row"
+                    id="modal-responsibility-row"
+                >
+
+                    <div class="modal-detail-label">
+                        Responsibilities
+                    </div>
+
+                    <div
+                        class="modal-detail-value"
+                        id="modal-member-responsibilities"
+                    ></div>
+
+                </div>
+
             </div>
 
         </div>
@@ -625,7 +769,9 @@ function createMemberModal() {
     document.body.appendChild(modal);
 
 
+    // ========================================================
     // CLOSE BUTTON
+    // ========================================================
 
     const closeButton =
         document.getElementById("member-modal-close");
@@ -641,7 +787,9 @@ function createMemberModal() {
     }
 
 
+    // ========================================================
     // CLICK OUTSIDE POPUP
+    // ========================================================
 
     const overlay =
         modal.querySelector(".member-modal-overlay");
@@ -655,6 +803,19 @@ function createMemberModal() {
         );
 
     }
+
+
+    // ========================================================
+    // ESCAPE KEY
+    // ========================================================
+
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape") {
+            closeMemberModal();
+        }
+
+    });
 
 }
 
@@ -686,6 +847,9 @@ function openMemberModal(member) {
     const name =
         document.getElementById("modal-member-name");
 
+    const father =
+        document.getElementById("modal-member-father");
+
     const registration =
         document.getElementById("modal-member-registration");
 
@@ -698,8 +862,13 @@ function openMemberModal(member) {
     const status =
         document.getElementById("modal-member-status");
 
+    const responsibilities =
+        document.getElementById("modal-member-responsibilities");
 
+
+    // ========================================================
     // PHOTO
+    // ========================================================
 
     if (photo) {
 
@@ -721,7 +890,9 @@ function openMemberModal(member) {
     }
 
 
+    // ========================================================
     // DESIGNATION
+    // ========================================================
 
     if (badge) {
 
@@ -731,7 +902,9 @@ function openMemberModal(member) {
     }
 
 
+    // ========================================================
     // NAME
+    // ========================================================
 
     if (name) {
 
@@ -741,7 +914,21 @@ function openMemberModal(member) {
     }
 
 
+    // ========================================================
+    // FATHER'S NAME
+    // ========================================================
+
+    if (father) {
+
+        father.textContent =
+            member.fatherName || "Not Updated";
+
+    }
+
+
+    // ========================================================
     // REGISTRATION NUMBER
+    // ========================================================
 
     if (registration) {
 
@@ -751,7 +938,9 @@ function openMemberModal(member) {
     }
 
 
+    // ========================================================
     // BLOOD GROUP
+    // ========================================================
 
     if (blood) {
 
@@ -761,7 +950,9 @@ function openMemberModal(member) {
     }
 
 
+    // ========================================================
     // DATE OF JOINING
+    // ========================================================
 
     if (date) {
 
@@ -771,7 +962,9 @@ function openMemberModal(member) {
     }
 
 
+    // ========================================================
     // MEMBERSHIP STATUS
+    // ========================================================
 
     if (status) {
 
@@ -781,7 +974,21 @@ function openMemberModal(member) {
     }
 
 
+    // ========================================================
+    // RESPONSIBILITIES
+    // ========================================================
+
+    if (responsibilities) {
+
+        responsibilities.textContent =
+            member.responsibilities || "Not Updated";
+
+    }
+
+
+    // ========================================================
     // SHOW MODAL
+    // ========================================================
 
     modal.classList.add("active");
 
@@ -843,8 +1050,9 @@ function showCommittee(type) {
     container.innerHTML = "";
 
 
-    // SECTION 01
+    // ========================================================
     // EXECUTIVE COMMITTEE
+    // ========================================================
 
     if (type === "executive") {
 
@@ -860,8 +1068,9 @@ function showCommittee(type) {
     }
 
 
-    // SECTION 02
+    // ========================================================
     // COMMITTEE MEMBERS
+    // ========================================================
 
     if (type === "members") {
 
@@ -877,19 +1086,25 @@ function showCommittee(type) {
     }
 
 
+    // ========================================================
     // HIDE HOME
+    // ========================================================
 
     home.style.display = "none";
 
 
+    // ========================================================
     // SHOW MEMBER VIEW
+    // ========================================================
 
     view.hidden = false;
 
     view.style.display = "block";
 
 
+    // ========================================================
     // SCROLL TO TOP
+    // ========================================================
 
     window.scrollTo({
 
@@ -965,11 +1180,12 @@ function loadCommittee() {
         );
 
         return;
-
     }
 
 
+    // ========================================================
     // INITIAL STATE
+    // ========================================================
 
     home.style.display = "block";
 
