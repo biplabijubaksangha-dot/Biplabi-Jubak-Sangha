@@ -476,66 +476,7 @@ function createMemberCard(member) {
                 ${member.designation || "Member"}
             </p>
 
-            <div class="member-card-details">
 
-                ${
-                    member.fatherName
-                        ? `
-                        <div class="member-card-detail">
-                            <span>Father's Name</span>
-                            <strong>${member.fatherName}</strong>
-                        </div>
-                        `
-                        : ""
-                }
-
-                ${
-                    member.registrationNo
-                        ? `
-                        <div class="member-card-detail">
-                            <span>Registration No.</span>
-                            <strong>${member.registrationNo}</strong>
-                        </div>
-                        `
-                        : ""
-                }
-
-                ${
-                    member.bloodGroup
-                        ? `
-                        <div class="member-card-detail">
-                            <span>Blood Group</span>
-                            <strong>${member.bloodGroup}</strong>
-                        </div>
-                        `
-                        : ""
-                }
-
-                ${
-                    member.dateOfJoining
-                        ? `
-                        <div class="member-card-detail">
-                            <span>Date of Joining</span>
-                            <strong>${member.dateOfJoining}</strong>
-                        </div>
-                        `
-                        : ""
-                }
-
-                ${
-                    member.membershipStatus
-                        ? `
-                        <div class="member-card-detail">
-                            <span>Status</span>
-                            <strong class="status-active">
-                                ${member.membershipStatus}
-                            </strong>
-                        </div>
-                        `
-                        : ""
-                }
-
-            </div>
 
         </div>
     `;
@@ -615,13 +556,10 @@ function createMemberModal() {
         return;
     }
 
-
     const modal = document.createElement("div");
 
     modal.id = "memberDetailsModal";
-
     modal.className = "member-modal";
-
 
     modal.innerHTML = `
         <div class="member-modal-overlay"></div>
@@ -630,193 +568,100 @@ function createMemberModal() {
             class="member-modal-content"
             role="dialog"
             aria-modal="true"
+            aria-labelledby="modal-member-name"
         >
-
-            <!-- CLOSE BUTTON -->
 
             <button
                 type="button"
                 class="member-modal-close"
                 id="member-modal-close"
-                aria-label="Close"
+                aria-label="Close member details"
             >
                 &times;
             </button>
 
+            <div class="member-modal-body">
 
-            <!-- LEFT SIDE - PHOTO -->
-
-            <div class="modal-member-photo">
-
-                <img
-                    id="modal-member-photo"
-                    src="assets/images/logo.png"
-                    alt="Member Photo"
-                >
-
-            </div>
-
-
-            <!-- RIGHT SIDE - DETAILS -->
-
-            <div class="modal-member-details">
-
-                <div
-                    class="modal-member-badge"
-                    id="modal-member-badge"
-                >
-                    Member
+                <div class="modal-member-photo">
+                    <img
+                        id="modal-member-photo"
+                        src="assets/images/logo.png"
+                        alt="Member Photo"
+                    >
                 </div>
 
-
-                <h2 id="modal-member-name">
-                    Member Name
-                </h2>
-
-
-                <div class="modal-detail-row">
-
-                    <div class="modal-detail-label">
-                        Father's Name
-                    </div>
+                <div class="modal-member-details">
 
                     <div
-                        class="modal-detail-value"
-                        id="modal-member-father"
-                    ></div>
-
-                </div>
-
-
-                <div class="modal-detail-row">
-
-                    <div class="modal-detail-label">
-                        Membership Registration No.
+                        class="modal-member-badge"
+                        id="modal-member-badge"
+                    >
+                        Member
                     </div>
 
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-registration"
-                    ></div>
+                    <h2 id="modal-member-name">
+                        Member Name
+                    </h2>
 
-                </div>
+                    <div class="member-detail-list">
 
+                        <div class="member-detail-item">
+                            <div class="detail-label">Father's Name</div>
+                            <div class="detail-value" id="modal-member-father"></div>
+                        </div>
 
-                <div class="modal-detail-row">
+                        <div class="member-detail-item">
+                            <div class="detail-label">Membership Registration No.</div>
+                            <div class="detail-value" id="modal-member-registration"></div>
+                        </div>
 
-                    <div class="modal-detail-label">
-                        Blood Group
+                        <div class="member-detail-item">
+                            <div class="detail-label">Blood Group</div>
+                            <div class="detail-value" id="modal-member-blood"></div>
+                        </div>
+
+                        <div class="member-detail-item">
+                            <div class="detail-label">Date of Joining</div>
+                            <div class="detail-value" id="modal-member-date"></div>
+                        </div>
+
+                        <div class="member-detail-item">
+                            <div class="detail-label">Membership Status</div>
+                            <div class="detail-value status-active" id="modal-member-status"></div>
+                        </div>
+
+                        <div class="member-detail-item" id="modal-responsibility-row">
+                            <div class="detail-label">Responsibilities</div>
+                            <div class="detail-value" id="modal-member-responsibilities"></div>
+                        </div>
+
                     </div>
-
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-blood"
-                    ></div>
-
-                </div>
-
-
-                <div class="modal-detail-row">
-
-                    <div class="modal-detail-label">
-                        Date of Joining
-                    </div>
-
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-date"
-                    ></div>
-
-                </div>
-
-
-                <div class="modal-detail-row">
-
-                    <div class="modal-detail-label">
-                        Membership Status
-                    </div>
-
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-status"
-                    ></div>
-
-                </div>
-
-
-                <div
-                    class="modal-detail-row modal-responsibility-row"
-                    id="modal-responsibility-row"
-                >
-
-                    <div class="modal-detail-label">
-                        Responsibilities
-                    </div>
-
-                    <div
-                        class="modal-detail-value"
-                        id="modal-member-responsibilities"
-                    ></div>
 
                 </div>
 
             </div>
-
         </div>
     `;
 
-
     document.body.appendChild(modal);
 
-
-    // ========================================================
-    // CLOSE BUTTON
-    // ========================================================
-
-    const closeButton =
-        document.getElementById("member-modal-close");
-
+    const closeButton = document.getElementById("member-modal-close");
 
     if (closeButton) {
-
-        closeButton.addEventListener(
-            "click",
-            closeMemberModal
-        );
-
+        closeButton.addEventListener("click", closeMemberModal);
     }
 
-
-    // ========================================================
-    // CLICK OUTSIDE POPUP
-    // ========================================================
-
-    const overlay =
-        modal.querySelector(".member-modal-overlay");
-
+    const overlay = modal.querySelector(".member-modal-overlay");
 
     if (overlay) {
-
-        overlay.addEventListener(
-            "click",
-            closeMemberModal
-        );
-
+        overlay.addEventListener("click", closeMemberModal);
     }
 
-
-    // ========================================================
-    // ESCAPE KEY
-    // ========================================================
-
     document.addEventListener("keydown", function (event) {
-
         if (event.key === "Escape") {
             closeMemberModal();
         }
-
     });
-
 }
 
 
@@ -978,11 +823,19 @@ function openMemberModal(member) {
     // RESPONSIBILITIES
     // ========================================================
 
+    const responsibilityRow =
+        document.getElementById("modal-responsibility-row");
+
     if (responsibilities) {
 
         responsibilities.textContent =
-            member.responsibilities || "Not Updated";
+            member.responsibilities || "";
 
+    }
+
+    if (responsibilityRow) {
+        responsibilityRow.style.display =
+            member.responsibilities ? "grid" : "none";
     }
 
 
