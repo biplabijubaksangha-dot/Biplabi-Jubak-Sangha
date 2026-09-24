@@ -189,7 +189,7 @@ const committeeMembers = [
         name: "Ananda Kumar Mohapatra",
         fatherName: "Narendra Mohapatra",
         designation: "Member",
-        photo: "assets/images/committee-01.jpg",
+        photo: "assets/images/members/member10.jpg",
         registrationNo: "BJS-16508-001",
         bloodGroup: "B-",
         dateOfJoining: "01-01-2023",
