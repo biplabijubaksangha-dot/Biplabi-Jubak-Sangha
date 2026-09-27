@@ -425,7 +425,19 @@ const committeeMembers = [
         bloodGroup: "A+",
         dateOfJoining: "01-01-2023",
         membershipStatus: "Active"
-    }
+   },
+
+{
+    name: "Surya Kanta Biswal",
+    fatherName: "Kulamani Biswal",
+    designation: "Member",
+    photo: "assets/images/committee-21.jpg",
+    registrationNo: "BJS-16508-036",
+    bloodGroup: "B+",
+    dateOfJoining: "01-01-2023",
+    membershipStatus: "Active"
+}
+
 ];
 
 
