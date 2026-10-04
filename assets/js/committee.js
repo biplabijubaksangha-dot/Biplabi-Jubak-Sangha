@@ -406,6 +406,17 @@ const committeeMembers = [
     },
 
     {
+        name: "Udip Kumar Muduli",
+        fatherName: "Gayadhar Muduli",
+        designation: "Member",
+        photo: "assets/images/logo.png",
+        registrationNo: "BJS-16508-034",
+        bloodGroup: "",
+        dateOfJoining: "01-01-2023",
+        membershipStatus: "Active"
+    },
+
+    {
     name: "Umesh Mohapatra",
     fatherName: "Dolagobinda Muduli",
     designation: "Member",
