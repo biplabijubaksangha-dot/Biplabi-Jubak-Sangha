@@ -2522,3 +2522,301 @@ body {
         bottom: 13px;
     }
 }
+
+
+/* =========================================================
+   PROFESSIONAL SITE POLISH - 2026
+   Home, activities and shared presentation only.
+   Committee member card/popup design is intentionally untouched.
+   ========================================================= */
+
+.home-impact {
+    position: relative;
+    z-index: 3;
+    margin-top: -42px;
+    padding: 0 0 20px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    overflow: hidden;
+}
+
+.impact-item {
+    min-height: 125px;
+    padding: 22px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-right: 1px solid #eef2f7;
+}
+
+.impact-item:last-child {
+    border-right: 0;
+}
+
+.impact-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.12);
+    color: #b38f1d;
+    font-size: 19px;
+}
+
+.impact-item strong {
+    color: #172554;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.impact-item > span:last-child {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.home-featured {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.home-section-heading {
+    max-width: 760px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.home-section-heading > span {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #b38f1d;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.home-section-heading h2 {
+    margin: 0 0 12px;
+    color: #172554;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+}
+
+.home-section-heading p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: repeat(2, 245px);
+    gap: 22px;
+}
+
+.featured-card {
+    position: relative;
+    display: block;
+    min-height: 245px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #172554;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.10);
+}
+
+.featured-card-large {
+    grid-row: 1 / span 2;
+    min-height: 512px;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.55s ease;
+}
+
+.featured-card::after {
+    content: "";
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(180deg, transparent, rgba(15, 23, 42, 0.90));
+}
+
+.featured-card:hover img {
+    transform: scale(1.045);
+}
+
+.featured-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 25px;
+    color: #ffffff;
+}
+
+.featured-overlay span {
+    color: #d4af37;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.featured-overlay h3 {
+    margin: 6px 0 5px;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.featured-overlay p {
+    margin: 0;
+    color: #e2e8f0;
+    font-size: 13px;
+}
+
+.featured-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.featured-actions .btn {
+    border-radius: 999px;
+    padding: 11px 22px;
+    font-weight: 700;
+}
+
+/* Make standard activity cards feel more premium without changing their content. */
+section.py-5 .card.h-100 {
+    border-radius: 20px;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+    border: 1px solid #e8edf4 !important;
+}
+
+section.py-5 .card.h-100:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 38px rgba(15, 23, 42, 0.12) !important;
+    border-color: rgba(212, 175, 55, 0.35) !important;
+}
+
+section.py-5 .card.h-100 .btn {
+    border-radius: 999px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 991px) {
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .impact-item:nth-child(-n+2) {
+        border-bottom: 1px solid #eef2f7;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 220px;
+    }
+
+    .featured-card-large {
+        grid-row: auto;
+        grid-column: 1 / span 2;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+    }
+
+    .home-impact {
+        margin-top: -25px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr 1fr;
+        border-radius: 18px;
+    }
+
+    .impact-item {
+        min-height: 110px;
+        padding: 17px 10px;
+    }
+
+    .impact-item strong {
+        font-size: 15px;
+    }
+
+    .impact-item > span:last-child {
+        font-size: 11px;
+    }
+
+    .home-featured {
+        padding: 65px 0;
+    }
+
+    .featured-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .featured-card,
+    .featured-card-large {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .impact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .impact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .featured-card,
+    .featured-card-large {
+        min-height: 225px;
+    }
+
+    .featured-overlay {
+        padding: 20px;
+    }
+
+    .featured-overlay h3 {
+        font-size: 18px;
+    }
+}

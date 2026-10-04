@@ -531,18 +531,36 @@
 
 
 /* =========================================================
-   HIDE OLD MODAL CLASSES
+   MEMBER MODAL DETAIL ROWS
    ========================================================= */
 
-.modal-detail-row,
-.modal-detail-label,
-.modal-detail-value,
-.modal-responsibilities,
-.view-details,
-.view-details-btn {
-    display: none !important;
+.modal-detail-row {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #e5e7eb;
 }
 
+.modal-detail-row:last-child {
+    border-bottom: 0;
+}
+
+.modal-detail-label {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.modal-detail-value {
+    min-width: 0;
+    color: #172554;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
 
 /* =========================================================
    MEMBER DETAILS MODAL
@@ -817,6 +835,12 @@ body.modal-open {
     .modal-member-details h2 {
         font-size: 25px;
         margin-bottom: 20px;
+    }
+
+    .modal-detail-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        text-align: left;
     }
 
     .member-detail-list {

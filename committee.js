@@ -642,7 +642,10 @@ function createMemberModal() {
             class="member-modal-content"
             role="dialog"
             aria-modal="true"
+            aria-labelledby="modal-member-name"
         >
+
+            <div class="member-modal-body">
 
             <!-- CLOSE BUTTON -->
 
@@ -771,6 +774,8 @@ function createMemberModal() {
                     ></div>
 
                 </div>
+
+            </div>
 
             </div>
 
