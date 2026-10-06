@@ -275,7 +275,7 @@ const committeeMembers = [
 
     {
         name: "Dharani Dhar Mohapatra",
-        fatherName: "Dhanajaya Mohapatra",
+        fatherName: "Dhaneswar Mohapatra",
         designation: "Member",
         photo: "assets/images/committee-08.jpg",
         registrationNo: "BJS-16508-011",
