@@ -170,7 +170,14 @@
 
     .error { color: #b42318; }
     .success { color: #16804a; }
-    .account-bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+
+    .account-bar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     .role-label {
       display: inline-block;
       padding: 6px 10px;
@@ -213,8 +220,9 @@
     <section id="setupMessage" class="auth-panel" hidden>
       <h2>Configuration required</h2>
       <p class="muted">
-        Add your Supabase project publishable key to the configuration
-        section in this file before using the dashboard.
+        The Supabase configuration is incomplete or the Supabase
+        JavaScript library could not be loaded. Please check the
+        project URL, publishable key and internet connection.
       </p>
     </section>
 
@@ -224,27 +232,19 @@
 
       <form id="loginForm">
         <label for="email">Email address</label>
-        <input
-          id="email"
-          type="email"
-          autocomplete="username"
-          required
-        >
+        <input id="email" type="email"
+               autocomplete="username" required>
 
         <label for="password">Password</label>
-        <input
-          id="password"
-          type="password"
-          autocomplete="current-password"
-          required
-        >
+        <input id="password" type="password"
+               autocomplete="current-password" required>
 
         <button id="loginButton" class="primary-button" type="submit">
           Sign In
         </button>
 
-        <div id="loginMessage" class="message" role="status"
-             aria-live="polite"></div>
+        <div id="loginMessage" class="message"
+             role="status" aria-live="polite"></div>
       </form>
     </section>
 
@@ -260,15 +260,14 @@
 
         <div class="account-bar">
           <span id="roleLabel" class="role-label"></span>
-          <button id="refreshButton" class="secondary-button" type="button">
-            Refresh
-          </button>
+          <button id="refreshButton" class="secondary-button"
+                  type="button">Refresh</button>
           <button id="logoutButton" type="button">Log Out</button>
         </div>
       </div>
 
-      <div id="dashboardMessage" class="message" role="status"
-           aria-live="polite"></div>
+      <div id="dashboardMessage" class="message"
+           role="status" aria-live="polite"></div>
 
       <section id="dashboard">
         <div class="cards">
@@ -294,11 +293,12 @@
         <div class="empty">
           <strong>Transaction screens are not connected yet.</strong>
           <p>
-            Individual contribution histories and transaction entry
-            will be added in a later step with member-specific access.
+            Contribution histories and transaction entry
+            will be added in a later development step.
           </p>
           <p>
-            This page does not directly fetch other members' payment records.
+            Member-specific access must remain enforced by
+            the Supabase database policies.
           </p>
         </div>
       </section>
@@ -306,16 +306,15 @@
       <section id="reports" class="panel">
         <h3>Financial Reports</h3>
         <p class="muted">
-          Monthly reports and annual statements will be added in a later
-          development step.
+          Monthly reports and annual statements will be added later.
         </p>
       </section>
 
       <div class="notice">
         <strong>Financial information:</strong>
-        The dashboard displays totals returned by the Supabase summary
-        function. Verify the figures against the club accounts before
-        using them for financial decisions.
+        The dashboard displays totals returned by the Supabase
+        summary function. Verify figures against the club accounts
+        before making financial decisions.
       </div>
     </section>
   </main>
@@ -325,10 +324,11 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
   <script>
     // SUPABASE CONFIGURATION
-    // The publishable/anon key is intended for frontend use.
-    // Never put a service_role key or secret key in this file.
+    // Use only the publishable key or legacy anon key here.
+    // NEVER put a Supabase secret or service_role key in frontend code.
 
     const SUPABASE_URL =
       "https://nysgfbagmwundhcailru.supabase.co";
@@ -342,13 +342,14 @@
     const loginForm = document.getElementById("loginForm");
     const loginButton = document.getElementById("loginButton");
     const loginMessage = document.getElementById("loginMessage");
-    const dashboardMessage = document.getElementById("dashboardMessage");
+    const dashboardMessage =
+      document.getElementById("dashboardMessage");
 
     let supabaseClient = null;
     let activeUserId = null;
     let sessionRequest = 0;
 
-    function showMessage(element, message, type) {
+    function showMessage(element, message, type = "") {
       element.textContent = message;
       element.className = "message" + (type ? " " + type : "");
     }
@@ -374,9 +375,11 @@
     function showAppLoading() {
       loginPanel.hidden = true;
       appPanel.hidden = false;
+
       document.getElementById("totalIncome").textContent = "Loading...";
       document.getElementById("totalExpenses").textContent = "Loading...";
       document.getElementById("availableBalance").textContent = "Loading...";
+
       showMessage(dashboardMessage, "Checking account permissions...");
     }
 
@@ -392,11 +395,12 @@
       activeUserId = session.user.id;
       showAppLoading();
 
-      const { data: profile, error: profileError } = await supabaseClient
-        .from("profiles")
-        .select("full_name, role, is_active")
-        .eq("user_id", session.user.id)
-        .maybeSingle();
+      const { data: profile, error: profileError } =
+        await supabaseClient
+          .from("profiles")
+          .select("full_name, role, is_active")
+          .eq("user_id", session.user.id)
+          .maybeSingle();
 
       if (requestId !== sessionRequest) return;
 
@@ -412,17 +416,20 @@
 
         if (requestId === sessionRequest) {
           showLogin(
-            "Your account is not active or does not have an authorized profile. Contact the club administrator."
+            "Your account has no active authorized profile. " +
+            "Contact the club administrator."
           );
         }
         return;
       }
 
       document.getElementById("welcomeText").textContent =
-        "Signed in as " + (profile.full_name || session.user.email || "User");
+        "Signed in as " +
+        (profile.full_name || session.user.email || "User");
 
       document.getElementById("roleLabel").textContent =
-        profile.role.charAt(0).toUpperCase() + profile.role.slice(1);
+        profile.role.charAt(0).toUpperCase() +
+        profile.role.slice(1);
 
       await loadFinanceSummary(requestId);
     }
@@ -430,7 +437,8 @@
     async function loadFinanceSummary(requestId) {
       showMessage(dashboardMessage, "Loading financial summary...");
 
-      const { data, error } = await supabaseClient.rpc("get_finance_summary");
+      const { data, error } =
+        await supabaseClient.rpc("get_finance_summary");
 
       if (requestId !== sessionRequest) return;
 
@@ -441,8 +449,7 @@
 
         showMessage(
           dashboardMessage,
-          "Could not load the financial summary. Check the Supabase function and permissions, then try Refresh. " +
-          error.message,
+          "Could not load the financial summary. " + error.message,
           "error"
         );
         return;
@@ -453,7 +460,7 @@
       if (!summary) {
         showMessage(
           dashboardMessage,
-          "No summary was returned. Please check the database function.",
+          "No summary was returned. Check the database function.",
           "error"
         );
         return;
@@ -468,14 +475,21 @@
       document.getElementById("availableBalance").textContent =
         formatINR(summary.available_balance);
 
-      showMessage(dashboardMessage, "Financial summary loaded.", "success");
+      showMessage(
+        dashboardMessage,
+        "Financial summary loaded.",
+        "success"
+      );
     }
 
     async function initialize() {
+      // CORRECTED: check for the original placeholder, not the real key.
       if (
         !window.supabase ||
+        !SUPABASE_URL ||
+        !SUPABASE_PUBLISHABLE_KEY ||
         SUPABASE_PUBLISHABLE_KEY ===
-          "sb_publishable_p0rbkrxxEKfKaJHctOmkNw_VDI-hDpm"
+          "PASTE_YOUR_PUBLISHABLE_OR_ANON_KEY_HERE"
       ) {
         loginPanel.hidden = true;
         appPanel.hidden = true;
@@ -494,24 +508,40 @@
         loginButton.disabled = true;
         showMessage(loginMessage, "Signing in...");
 
-        const email = document.getElementById("email").value.trim();
-        const password = document.getElementById("password").value;
+        const email =
+          document.getElementById("email").value.trim();
 
-        const { error } = await supabaseClient.auth.signInWithPassword({
-          email,
-          password
-        });
+        const password =
+          document.getElementById("password").value;
 
-        loginButton.disabled = false;
+        try {
+          const { error } =
+            await supabaseClient.auth.signInWithPassword({
+              email: email,
+              password: password
+            });
 
-        if (error) {
+          if (error) {
+            showMessage(
+              loginMessage,
+              "Sign-in failed: " + error.message,
+              "error"
+            );
+          } else {
+            showMessage(
+              loginMessage,
+              "Sign-in successful. Loading dashboard...",
+              "success"
+            );
+          }
+        } catch (error) {
           showMessage(
             loginMessage,
-            "Sign-in failed. Check your email and password. " + error.message,
+            "Connection error. Check your internet and Supabase configuration.",
             "error"
           );
-        } else {
-          showMessage(loginMessage, "Sign-in successful. Loading dashboard...");
+        } finally {
+          loginButton.disabled = false;
         }
       });
 
@@ -539,12 +569,14 @@
         }
       );
 
-      supabaseClient.auth.onAuthStateChange(function (_event, session) {
-        // Run after the auth callback finishes to avoid locking auth operations.
-        setTimeout(function () {
-          loadAuthenticatedUser(session);
-        }, 0);
-      });
+      supabaseClient.auth.onAuthStateChange(
+        function (_event, session) {
+          // Defer database calls until the auth callback has completed.
+          setTimeout(function () {
+            loadAuthenticatedUser(session);
+          }, 0);
+        }
+      );
     }
 
     initialize();
