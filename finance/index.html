@@ -9,9 +9,7 @@
   <title>Club Finance Dashboard | Biplabi Jubak Sangha</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -27,15 +25,8 @@
       border-bottom: 4px solid #d4af37;
     }
 
-    header h1 {
-      margin: 0 0 7px;
-      font-size: 24px;
-    }
-
-    header p {
-      margin: 0;
-      color: #dce5f2;
-    }
+    header h1 { margin: 0 0 7px; font-size: 24px; }
+    header p { margin: 0; color: #dce5f2; }
 
     nav {
       background: white;
@@ -53,9 +44,7 @@
       font-size: 14px;
     }
 
-    nav a:hover {
-      color: #a47c12;
-    }
+    nav a:hover { color: #a47c12; }
 
     main {
       max-width: 1100px;
@@ -72,15 +61,8 @@
       margin-bottom: 22px;
     }
 
-    h2 {
-      margin: 0 0 7px;
-      font-size: 23px;
-    }
-
-    .muted {
-      color: #68778c;
-      font-size: 14px;
-    }
+    h2 { margin: 0 0 7px; font-size: 23px; }
+    .muted { color: #68778c; font-size: 14px; }
 
     .cards {
       display: grid;
@@ -88,8 +70,7 @@
       gap: 16px;
     }
 
-    .card,
-    .panel {
+    .card, .panel {
       background: white;
       padding: 22px;
       border-radius: 12px;
@@ -109,24 +90,13 @@
       overflow-wrap: anywhere;
     }
 
-    .income {
-      color: #16804a;
-    }
-
-    .expense {
-      color: #c0392b;
-    }
-
-    .panel {
-      margin-top: 24px;
-    }
-
-    .panel h3 {
-      margin-top: 0;
-    }
+    .income { color: #16804a; }
+    .expense { color: #c0392b; }
+    .panel { margin-top: 24px; }
+    .panel h3 { margin-top: 0; }
 
     .empty {
-      padding: 32px 12px;
+      padding: 25px 12px;
       text-align: center;
       color: #68778c;
       line-height: 1.7;
@@ -142,6 +112,74 @@
       line-height: 1.6;
     }
 
+    .auth-panel {
+      max-width: 440px;
+      margin: 35px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #e4e9f1;
+      box-shadow: 0 3px 12px #10274708;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 6px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 7px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 11px 17px;
+      border: 0;
+      border-radius: 7px;
+      background: #102747;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    button:disabled { opacity: 0.6; cursor: wait; }
+
+    .primary-button {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .secondary-button {
+      background: #e9eef5;
+      color: #102747;
+    }
+
+    .message {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+
+    .error { color: #b42318; }
+    .success { color: #16804a; }
+    .account-bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .role-label {
+      display: inline-block;
+      padding: 6px 10px;
+      background: #edf2f8;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 28px 16px;
@@ -149,24 +187,17 @@
       font-size: 12px;
     }
 
+    [hidden] { display: none !important; }
+
     @media (max-width: 700px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .amount {
-        font-size: 25px;
-      }
-
-      header h1 {
-        font-size: 21px;
-      }
+      .cards { grid-template-columns: 1fr; }
+      .amount { font-size: 25px; }
+      header h1 { font-size: 21px; }
     }
   </style>
 </head>
 
 <body>
-
   <header>
     <h1>Biplabi Jubak Sangha</h1>
     <p>Club Finance Management</p>
@@ -179,72 +210,344 @@
   </nav>
 
   <main>
+    <section id="setupMessage" class="auth-panel" hidden>
+      <h2>Configuration required</h2>
+      <p class="muted">
+        Add your Supabase project publishable key to the configuration
+        section in this file before using the dashboard.
+      </p>
+    </section>
 
-    <section id="dashboard">
+    <section id="loginPanel" class="auth-panel">
+      <h2>Member Login</h2>
+      <p class="muted">Sign in using your authorized club account.</p>
+
+      <form id="loginForm">
+        <label for="email">Email address</label>
+        <input
+          id="email"
+          type="email"
+          autocomplete="username"
+          required
+        >
+
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          autocomplete="current-password"
+          required
+        >
+
+        <button id="loginButton" class="primary-button" type="submit">
+          Sign In
+        </button>
+
+        <div id="loginMessage" class="message" role="status"
+             aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section id="appPanel" hidden>
       <div class="heading">
         <div>
           <h2>Finance Dashboard</h2>
           <div class="muted">
             Overview of club income and expenditure
           </div>
+          <p id="welcomeText" class="muted"></p>
+        </div>
+
+        <div class="account-bar">
+          <span id="roleLabel" class="role-label"></span>
+          <button id="refreshButton" class="secondary-button" type="button">
+            Refresh
+          </button>
+          <button id="logoutButton" type="button">Log Out</button>
         </div>
       </div>
 
-      <div class="cards">
+      <div id="dashboardMessage" class="message" role="status"
+           aria-live="polite"></div>
 
-        <div class="card">
-          <h3>Total Income</h3>
-          <div class="amount income">₹0.00</div>
+      <section id="dashboard">
+        <div class="cards">
+          <div class="card">
+            <h3>Total Income</h3>
+            <div id="totalIncome" class="amount income">Loading...</div>
+          </div>
+
+          <div class="card">
+            <h3>Total Expenses</h3>
+            <div id="totalExpenses" class="amount expense">Loading...</div>
+          </div>
+
+          <div class="card">
+            <h3>Available Balance</h3>
+            <div id="availableBalance" class="amount">Loading...</div>
+          </div>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Total Expenses</h3>
-          <div class="amount expense">₹0.00</div>
+      <section id="transactions" class="panel">
+        <h3>Transactions</h3>
+        <div class="empty">
+          <strong>Transaction screens are not connected yet.</strong>
+          <p>
+            Individual contribution histories and transaction entry
+            will be added in a later step with member-specific access.
+          </p>
+          <p>
+            This page does not directly fetch other members' payment records.
+          </p>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Available Balance</h3>
-          <div class="amount">₹0.00</div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="transactions" class="panel">
-      <h3>Recent Transactions</h3>
-
-      <div class="empty">
-        <strong>No transactions recorded yet.</strong>
-        <p>
-          Income and expense records will appear here
-          after transaction management is implemented.
+      <section id="reports" class="panel">
+        <h3>Financial Reports</h3>
+        <p class="muted">
+          Monthly reports and annual statements will be added in a later
+          development step.
         </p>
+      </section>
+
+      <div class="notice">
+        <strong>Financial information:</strong>
+        The dashboard displays totals returned by the Supabase summary
+        function. Verify the figures against the club accounts before
+        using them for financial decisions.
       </div>
     </section>
-
-    <section id="reports" class="panel">
-      <h3>Financial Reports</h3>
-
-      <p class="muted">
-        Monthly income and expense summaries, contribution
-        reports and annual financial statements will be added
-        in a later development step.
-      </p>
-    </section>
-
-    <div class="notice">
-      <strong>Development mode:</strong>
-      The figures shown are placeholders, not actual club
-      balances. This prototype does not save transactions,
-      authenticate users or protect financial records.
-      Do not enter real financial information yet.
-    </div>
-
   </main>
 
   <footer>
     Biplabi Jubak Sangha | Club Finance Management
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // SUPABASE CONFIGURATION
+    // The publishable/anon key is intended for frontend use.
+    // Never put a service_role key or secret key in this file.
+
+    const SUPABASE_URL =
+      "https://nysgfbagmwundhcailru.supabase.co";
+
+    const SUPABASE_PUBLISHABLE_KEY =
+      "nysgfbagmwundhcailru";
+
+    const loginPanel = document.getElementById("loginPanel");
+    const appPanel = document.getElementById("appPanel");
+    const setupMessage = document.getElementById("setupMessage");
+    const loginForm = document.getElementById("loginForm");
+    const loginButton = document.getElementById("loginButton");
+    const loginMessage = document.getElementById("loginMessage");
+    const dashboardMessage = document.getElementById("dashboardMessage");
+
+    let supabaseClient = null;
+    let activeUserId = null;
+    let sessionRequest = 0;
+
+    function showMessage(element, message, type) {
+      element.textContent = message;
+      element.className = "message" + (type ? " " + type : "");
+    }
+
+    function formatINR(value) {
+      return new Intl.NumberFormat("en-IN", {
+        style: "currency",
+        currency: "INR",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      }).format(Number(value) || 0);
+    }
+
+    function showLogin(message = "") {
+      loginPanel.hidden = false;
+      appPanel.hidden = true;
+
+      if (message) {
+        showMessage(loginMessage, message, "error");
+      }
+    }
+
+    function showAppLoading() {
+      loginPanel.hidden = true;
+      appPanel.hidden = false;
+      document.getElementById("totalIncome").textContent = "Loading...";
+      document.getElementById("totalExpenses").textContent = "Loading...";
+      document.getElementById("availableBalance").textContent = "Loading...";
+      showMessage(dashboardMessage, "Checking account permissions...");
+    }
+
+    async function loadAuthenticatedUser(session) {
+      const requestId = ++sessionRequest;
+
+      if (!session) {
+        activeUserId = null;
+        showLogin();
+        return;
+      }
+
+      activeUserId = session.user.id;
+      showAppLoading();
+
+      const { data: profile, error: profileError } = await supabaseClient
+        .from("profiles")
+        .select("full_name, role, is_active")
+        .eq("user_id", session.user.id)
+        .maybeSingle();
+
+      if (requestId !== sessionRequest) return;
+
+      const allowedRoles = ["president", "treasurer", "member"];
+
+      if (
+        profileError ||
+        !profile ||
+        profile.is_active !== true ||
+        !allowedRoles.includes(profile.role)
+      ) {
+        await supabaseClient.auth.signOut();
+
+        if (requestId === sessionRequest) {
+          showLogin(
+            "Your account is not active or does not have an authorized profile. Contact the club administrator."
+          );
+        }
+        return;
+      }
+
+      document.getElementById("welcomeText").textContent =
+        "Signed in as " + (profile.full_name || session.user.email || "User");
+
+      document.getElementById("roleLabel").textContent =
+        profile.role.charAt(0).toUpperCase() + profile.role.slice(1);
+
+      await loadFinanceSummary(requestId);
+    }
+
+    async function loadFinanceSummary(requestId) {
+      showMessage(dashboardMessage, "Loading financial summary...");
+
+      const { data, error } = await supabaseClient.rpc("get_finance_summary");
+
+      if (requestId !== sessionRequest) return;
+
+      if (error) {
+        document.getElementById("totalIncome").textContent = "Unavailable";
+        document.getElementById("totalExpenses").textContent = "Unavailable";
+        document.getElementById("availableBalance").textContent = "Unavailable";
+
+        showMessage(
+          dashboardMessage,
+          "Could not load the financial summary. Check the Supabase function and permissions, then try Refresh. " +
+          error.message,
+          "error"
+        );
+        return;
+      }
+
+      const summary = Array.isArray(data) ? data[0] : data;
+
+      if (!summary) {
+        showMessage(
+          dashboardMessage,
+          "No summary was returned. Please check the database function.",
+          "error"
+        );
+        return;
+      }
+
+      document.getElementById("totalIncome").textContent =
+        formatINR(summary.total_income);
+
+      document.getElementById("totalExpenses").textContent =
+        formatINR(summary.total_expenses);
+
+      document.getElementById("availableBalance").textContent =
+        formatINR(summary.available_balance);
+
+      showMessage(dashboardMessage, "Financial summary loaded.", "success");
+    }
+
+    async function initialize() {
+      if (
+        !window.supabase ||
+        SUPABASE_PUBLISHABLE_KEY ===
+          "PASTE_YOUR_PUBLISHABLE_OR_ANON_KEY_HERE"
+      ) {
+        loginPanel.hidden = true;
+        appPanel.hidden = true;
+        setupMessage.hidden = false;
+        return;
+      }
+
+      supabaseClient = window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_PUBLISHABLE_KEY
+      );
+
+      loginForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        loginButton.disabled = true;
+        showMessage(loginMessage, "Signing in...");
+
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+
+        const { error } = await supabaseClient.auth.signInWithPassword({
+          email,
+          password
+        });
+
+        loginButton.disabled = false;
+
+        if (error) {
+          showMessage(
+            loginMessage,
+            "Sign-in failed. Check your email and password. " + error.message,
+            "error"
+          );
+        } else {
+          showMessage(loginMessage, "Sign-in successful. Loading dashboard...");
+        }
+      });
+
+      document.getElementById("logoutButton").addEventListener(
+        "click",
+        async function () {
+          const { error } = await supabaseClient.auth.signOut();
+
+          if (error) {
+            showMessage(
+              dashboardMessage,
+              "Could not log out. Please try again.",
+              "error"
+            );
+          }
+        }
+      );
+
+      document.getElementById("refreshButton").addEventListener(
+        "click",
+        async function () {
+          if (activeUserId) {
+            await loadFinanceSummary(sessionRequest);
+          }
+        }
+      );
+
+      supabaseClient.auth.onAuthStateChange(function (_event, session) {
+        // Run after the auth callback finishes to avoid locking auth operations.
+        setTimeout(function () {
+          loadAuthenticatedUser(session);
+        }, 0);
+      });
+    }
+
+    initialize();
+  </script>
 </body>
 </html>
