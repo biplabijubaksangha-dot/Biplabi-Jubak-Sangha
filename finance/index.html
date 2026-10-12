@@ -6,51 +6,245 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#102747">
-  <title>Club Finance | Biplabi Jubak Sangha</title>
+  <title>Club Finance Dashboard | Biplabi Jubak Sangha</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #102747;
+      background: #f3f5f9;
+      color: #172b4d;
     }
+
     header {
       background: #102747;
       color: white;
-      padding: 24px 16px;
-      text-align: center;
+      padding: 22px;
       border-bottom: 4px solid #d4af37;
     }
-    main {
-      max-width: 600px;
-      margin: 32px auto;
-      padding: 24px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px #10274712;
+
+    header h1 {
+      margin: 0 0 7px;
+      font-size: 24px;
     }
-    h2 { color: #a47c12; }
+
+    header p {
+      margin: 0;
+      color: #dce5f2;
+    }
+
+    nav {
+      background: white;
+      padding: 14px 20px;
+      border-bottom: 1px solid #e1e6ef;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #102747;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #a47c12;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 28px auto;
+      padding: 0 18px;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin: 0 0 7px;
+      font-size: 23px;
+    }
+
+    .muted {
+      color: #68778c;
+      font-size: 14px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card,
+    .panel {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      border: 1px solid #e4e9f1;
+      box-shadow: 0 3px 12px #10274708;
+    }
+
+    .card h3 {
+      font-size: 14px;
+      color: #68778c;
+      margin: 0 0 16px;
+    }
+
+    .amount {
+      font-size: 27px;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    .income {
+      color: #16804a;
+    }
+
+    .expense {
+      color: #c0392b;
+    }
+
+    .panel {
+      margin-top: 24px;
+    }
+
+    .panel h3 {
+      margin-top: 0;
+    }
+
+    .empty {
+      padding: 32px 12px;
+      text-align: center;
+      color: #68778c;
+      line-height: 1.7;
+    }
+
     .notice {
-      padding: 14px;
+      margin-top: 20px;
+      padding: 14px 16px;
       background: #fff8df;
+      color: #765b12;
       border-radius: 8px;
+      font-size: 13px;
       line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      color: #68778c;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .amount {
+        font-size: 25px;
+      }
+
+      header h1 {
+        font-size: 21px;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Biplabi Jubak Sangha</h1>
     <p>Club Finance Management</p>
   </header>
+
+  <nav aria-label="Finance navigation">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#transactions">Transactions</a>
+    <a href="#reports">Reports</a>
+  </nav>
+
   <main>
-    <h2>Finance App Setup</h2>
-    <p>Welcome to the club's finance management section.</p>
+
+    <section id="dashboard">
+      <div class="heading">
+        <div>
+          <h2>Finance Dashboard</h2>
+          <div class="muted">
+            Overview of club income and expenditure
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Total Income</h3>
+          <div class="amount income">₹0.00</div>
+        </div>
+
+        <div class="card">
+          <h3>Total Expenses</h3>
+          <div class="amount expense">₹0.00</div>
+        </div>
+
+        <div class="card">
+          <h3>Available Balance</h3>
+          <div class="amount">₹0.00</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="transactions" class="panel">
+      <h3>Recent Transactions</h3>
+
+      <div class="empty">
+        <strong>No transactions recorded yet.</strong>
+        <p>
+          Income and expense records will appear here
+          after transaction management is implemented.
+        </p>
+      </div>
+    </section>
+
+    <section id="reports" class="panel">
+      <h3>Financial Reports</h3>
+
+      <p class="muted">
+        Monthly income and expense summaries, contribution
+        reports and annual financial statements will be added
+        in a later development step.
+      </p>
+    </section>
+
     <div class="notice">
-      <strong>Setup in progress</strong>
-      <p>Secure login, member contributions, expenses,
-      reports and digital receipts will be configured here.</p>
+      <strong>Development mode:</strong>
+      The figures shown are placeholders, not actual club
+      balances. This prototype does not save transactions,
+      authenticate users or protect financial records.
+      Do not enter real financial information yet.
     </div>
+
   </main>
+
+  <footer>
+    Biplabi Jubak Sangha | Club Finance Management
+  </footer>
+
 </body>
 </html>
